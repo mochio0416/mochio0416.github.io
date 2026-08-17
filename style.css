@@ -1911,97 +1911,137 @@ body[data-page="controlled-environment"] .detail-theme-hero h1{
 
 
 /* =========================================================
-   v10.33 — screenshot-inspired home layout, built in HTML/CSS
+   v10.34 RECOVERY
+   Base = v10.31 stable layout.
+   Only two corrections:
+   1) make the top research map less vertically elongated
+   2) guarantee that Research-detail JPGs are never cropped by CSS
    ========================================================= */
-#concept{display:none!important}
-.home-hero-v33{padding:62px 0 34px;min-height:0;overflow:hidden;background:#07192c}
-.home-hero-v33 .hero-gridlines{opacity:.045}
-.home-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,.88fr) minmax(650px,1.12fr);gap:48px;align-items:center}
-.home-hero-copy{padding:12px 0 4px}
-.home-hero-copy .kicker{margin:0 0 22px;font-size:.68rem}
-.home-hero-copy h1{margin:0;color:#fff;font-size:clamp(3.2rem,4.7vw,5.15rem);line-height:1.04;letter-spacing:-.055em;max-width:700px}
-.home-hero-lead{max-width:660px;margin:26px 0 0;color:#c2cedb;font-size:.98rem;line-height:1.9}
-.home-hero-actions{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
-.home-hero-actions .button{min-width:160px}
-.home-hero-actions .button span{margin-left:18px}
-.home-hero-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px;max-width:630px}
-.home-hero-proof>div{min-height:60px;padding:13px 15px;border:1px solid rgba(255,255,255,.16);border-radius:13px;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.025)}
-.home-hero-proof b{font-size:.84rem;color:#fff;white-space:nowrap}
-.home-hero-proof span{font-size:.68rem;line-height:1.35;color:#aebccd}
 
-.home-research-map{display:grid;grid-template-columns:190px minmax(260px,1fr) 190px;grid-template-rows:1fr 1fr;gap:18px 20px;align-items:center;min-height:370px;position:relative}
-.home-map-card{position:relative;min-height:154px;padding:18px 18px 15px;border-radius:16px;background:#fff;color:#0b1a2d;border:1px solid rgba(255,255,255,.5);box-shadow:0 16px 36px rgba(0,0,0,.18);display:flex;flex-direction:column;transition:.2s ease;z-index:2}
-.home-map-card:hover{transform:translateY(-4px);box-shadow:0 20px 42px rgba(0,0,0,.24)}
-.home-map-card>div{display:grid;grid-template-columns:34px 1fr;gap:7px;align-items:start;margin-left:50px}
-.home-map-card b{font-size:1.05rem;line-height:1}
-.home-map-card strong{font-size:.78rem;line-height:1.2}
-.home-map-card p{font-size:.67rem;line-height:1.55;margin:15px 0 0;color:#445163}
-.home-map-card i{margin-top:auto;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#ef4c6d;color:#fff;font-size:.72rem;font-style:normal}
-.home-map-icon{position:absolute;left:16px;top:16px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid currentColor;font-weight:800;font-size:1.05rem}
-.icon-red{color:#ed4b6c}.icon-green{color:#67a863}.icon-blue{color:#5b9ee7}.icon-purple{color:#8763b9}
-.home-card-01{grid-column:1;grid-row:1}.home-card-02{grid-column:3;grid-row:1}.home-card-03{grid-column:1;grid-row:2}.home-card-04{grid-column:3;grid-row:2}
-.home-fruit-panel{grid-column:2;grid-row:1/3;align-self:center;justify-self:stretch;min-height:238px;border:1px solid rgba(255,255,255,.30);border-radius:36px;background:radial-gradient(circle at 50% 35%,rgba(255,255,255,.09),rgba(255,255,255,.025) 58%,rgba(255,255,255,.015));display:flex;align-items:center;justify-content:center;padding:24px;position:relative;z-index:1;box-shadow:inset 0 0 70px rgba(255,255,255,.03)}
-.home-fruit-panel img{display:block;width:100%;height:auto;max-height:205px;object-fit:contain;filter:drop-shadow(0 20px 24px rgba(0,0,0,.30))}
-.home-card-01::after,.home-card-03::after{content:"";position:absolute;right:-21px;top:50%;width:21px;border-top:2px dotted rgba(255,255,255,.75)}
-.home-card-02::before,.home-card-04::before{content:"";position:absolute;left:-21px;top:50%;width:21px;border-top:2px dotted rgba(255,255,255,.75)}
+/* --- TOP: preserve the v10.31 design, but make the research map more compact --- */
+@media (min-width:1101px){
+  .hero-grid{
+    grid-template-columns:minmax(0,1.10fr) minmax(0,.90fr);
+    gap:52px;
+    align-items:center;
+  }
 
-.home-about-v33{padding:42px 0 38px;background:#fff}
-.home-about-grid{display:grid;grid-template-columns:.9fr .95fr 1.55fr;gap:38px;align-items:center}
-.home-about-heading .section-number{margin-bottom:10px}
-.home-about-heading h2{font-size:clamp(2.25rem,3.2vw,3.75rem);line-height:1.12;letter-spacing:-.045em;margin:0;color:#0b1a2d}
-.heading-accent{display:block;width:52px;height:3px;background:#ef4c6d;margin-top:24px}
-.home-about-copy p{margin:0;color:#354357;line-height:1.9;font-size:.94rem;font-weight:600}
-.home-profile-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.home-profile-card{min-height:130px;padding:18px 16px;border:1px solid #e0e5eb;border-radius:12px;background:#fff;display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(18,40,64,.035)}
-.home-profile-card>span{width:35px;height:35px;border-radius:50%;display:grid;place-items:center;background:#fff0f3;color:#ef4c6d;font-size:1rem;margin-bottom:12px}
-.home-profile-card small{font-size:.66rem;color:#5d6875;margin-bottom:9px}
-.home-profile-card strong{font-size:.86rem;line-height:1.45;color:#0c1a2d}
+  .hero-visual{
+    min-height:520px;
+  }
 
-.home-research-v33{padding:34px 0 42px;background:#07192c;color:#fff}
-.home-research-heading{margin-bottom:17px}
-.home-research-heading .section-number{margin:0 0 4px;color:#ff768f}
-.home-research-heading h2{font-size:1.18rem;margin:0;color:#fff;letter-spacing:0}
-.home-research-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.home-research-card{position:relative;min-height:245px;border-radius:14px;overflow:hidden;background:#fff;color:#0c1a2d;border:1px solid rgba(255,255,255,.18);display:grid;grid-template-columns:1.08fr .92fr;box-shadow:0 15px 34px rgba(0,0,0,.16);transition:.2s ease}
-.home-research-card:hover{transform:translateY(-4px);box-shadow:0 21px 42px rgba(0,0,0,.23)}
-.home-research-copy{position:relative;z-index:2;padding:18px 12px 16px 16px;display:flex;flex-direction:column}
-.home-research-copy>span{color:#ef4c6d;font-size:1.2rem;line-height:1;font-weight:800}
-.home-research-copy h3{font-size:.72rem;line-height:1.25;margin:-14px 0 14px 27px;text-transform:none}
-.home-research-copy p{font-size:.64rem;line-height:1.7;color:#344255;margin:0;max-width:190px}
-.home-research-copy>b{margin-top:auto;width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:#ef4c6d;color:#fff;font-size:.72rem}
-.home-research-media{position:relative;overflow:hidden;background:#eef3f7}
-.home-research-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.35) 15%,transparent 48%)}
-.home-research-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
-.home-research-card:nth-child(1) .home-research-media img{object-position:center 45%}
-.home-research-card:nth-child(2) .home-research-media img{object-position:center}
-.home-research-card:nth-child(3) .home-research-media img{object-position:center}
-.home-research-card:nth-child(4) .home-research-media img{object-position:center 45%}
+  .hero-research-map{
+    width:min(100%,620px);
+    height:500px;
+    margin:0 auto;
+  }
 
-/* Keep the rest of the page calm and readable below the redesigned top. */
-.publication-section,.journey-section,.collaborate-section{background:#fff}
-.news-section,.activity-section{background:#f6f8fb}
+  .hero-crop-hub{
+    left:162px;
+    right:162px;
+    top:132px;
+    bottom:132px;
+    padding:20px;
+    border-radius:30px;
+  }
 
-@media(max-width:1250px){
-  .home-hero-grid{grid-template-columns:1fr;gap:28px}
-  .home-research-map{max-width:760px;width:100%;margin:0 auto}
-  .home-about-grid{grid-template-columns:1fr 1fr}
-  .home-profile-cards{grid-column:1/-1}
-  .home-research-cards{grid-template-columns:repeat(2,1fr)}
+  .hero-crop-hub img{
+    width:92%;
+    max-height:170px;
+    height:auto;
+    object-fit:contain;
+    margin-top:16px;
+  }
+
+  .hero-map-card{
+    width:158px;
+    height:118px;
+    padding:14px 16px;
+    border-radius:20px;
+  }
+
+  .map-card-01{left:0;top:36px}
+  .map-card-02{right:0;top:36px}
+  .map-card-03{left:0;bottom:36px}
+  .map-card-04{right:0;bottom:36px}
+
+  .map-card-icon{
+    width:34px;
+    height:34px;
+  }
+
+  .hero-map-card strong{
+    font-size:.80rem;
+    line-height:1.18;
+    max-width:96px;
+    margin-bottom:6px;
+  }
 }
-@media(max-width:760px){
-  .home-hero-v33{padding:44px 0 28px}
-  .home-hero-copy h1{font-size:clamp(2.7rem,12vw,4.2rem)}
-  .home-hero-proof{grid-template-columns:1fr}
-  .home-research-map{grid-template-columns:1fr 1fr;grid-template-rows:auto auto auto;gap:12px;min-height:0}
-  .home-fruit-panel{grid-column:1/-1;grid-row:1;min-height:190px;border-radius:26px}
-  .home-card-01{grid-column:1;grid-row:2}.home-card-02{grid-column:2;grid-row:2}.home-card-03{grid-column:1;grid-row:3}.home-card-04{grid-column:2;grid-row:3}
-  .home-map-card{min-height:138px;padding:14px}
-  .home-map-card::before,.home-map-card::after{display:none}
-  .home-map-card>div{margin-left:42px;grid-template-columns:26px 1fr}
-  .home-map-icon{left:12px;top:12px;width:34px;height:34px}
-  .home-map-card p{font-size:.62rem}
-  .home-about-grid{grid-template-columns:1fr;gap:24px}
-  .home-profile-cards{grid-template-columns:repeat(2,1fr)}
-  .home-research-cards{grid-template-columns:1fr}
-  .home-research-card{min-height:230px}
+
+/* --- RESEARCH DETAIL PAGES: no CSS crop, no fixed aspect ratio --- */
+.detail-theme-hero .detail-visual{
+  overflow:visible !important;
+}
+
+.detail-theme-hero .theme-visual-figure{
+  overflow:visible !important;
+}
+
+.detail-theme-hero .theme-visual-image{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  overflow:visible !important;
+}
+
+/* Give the original artwork a little more column width without changing the page design. */
+@media (min-width:1001px){
+  .detail-theme-hero .detail-hero-grid{
+    grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);
+    gap:44px;
+    align-items:start;
+  }
+
+  .detail-theme-hero .detail-copy{
+    min-width:0;
+  }
+
+  .detail-theme-hero .detail-visual{
+    width:100%;
+    min-height:0;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-start;
+  }
+
+  .detail-theme-hero .theme-visual-figure{
+    width:100%;
+    max-width:700px;
+    margin:0 0 0 auto;
+  }
+
+  /* Portrait originals should stay fully visible rather than becoming excessively tall. */
+  .page-controlled-environment .detail-theme-hero .theme-visual-figure{
+    max-width:650px;
+  }
+
+  .page-sensing .detail-theme-hero .theme-visual-figure{
+    max-width:520px;
+  }
+}
+
+@media (max-width:1000px){
+  .detail-theme-hero .theme-visual-figure{
+    width:min(100%,680px);
+    margin:0 auto;
+  }
+}
+
+/* Important: the browser must never crop the source image at the frame boundary. */
+.theme-visual-image{
+  clip-path:none !important;
 }
