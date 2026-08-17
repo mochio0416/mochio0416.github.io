@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#081829"/><stop offset="100%" stop-color="#10283d"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#9ADFB0"/><stop offset="100%" stop-color="#56A77C"/></linearGradient>
+<linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF7F97"/><stop offset="100%" stop-color="#D62E52"/></linearGradient>
+</defs>
+<rect width="1200" height="900" rx="36" fill="url(#bg)"/>
+<g opacity="0.09" stroke="#91A8BF"><path d="M0 180H1200"/><path d="M0 360H1200"/><path d="M0 540H1200"/><path d="M0 720H1200"/><path d="M240 0V900"/><path d="M480 0V900"/><path d="M720 0V900"/><path d="M960 0V900"/></g>
+<text x="70" y="86" fill="#F5F8FC" font-size="38" font-weight="700">Controlled environment</text>
+<text x="70" y="126" fill="#9BB0C5" font-size="21">CO₂・光・温度を操作し、乾物生産と収量への応答をみる</text>
+<rect x="248" y="166" width="704" height="554" rx="32" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.11)"/>
+<path d="M326 642V270L600 174l274 96v372" stroke="#AFC3D6" stroke-width="5" stroke-linejoin="round"/>
+<path d="M392 642V326L600 250l208 76v316" stroke="#9BB0C5" stroke-width="3" stroke-linejoin="round" opacity="0.75"/>
+<g transform="translate(470 466)"><rect x="0" y="46" width="260" height="34" rx="14" fill="#8C6854"/><path d="M130 46V-42" stroke="#88BA98" stroke-width="8" stroke-linecap="round"/><path d="M74 -18c-49-43-30-104 41-110c63-5 104 48 72 101c-36 10-73 16-113 9Z" fill="url(#leaf)"/><path d="M140 -28c48-47 106-24 112 30c5 53-42 91-102 74c-14-32-17-66-10-104Z" fill="url(#leaf)"/><g transform="translate(96 6) scale(.72)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g><g transform="translate(150 18) scale(.62)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g></g>
+<g>
+  <circle cx="198" cy="238" r="40" fill="#1a2940" stroke="rgba(255,255,255,.12)"/><circle cx="198" cy="238" r="24" fill="#ffd067"/><path d="M198 186v-24M198 314v-24M146 238h-24M274 238h-24M161 201l-18-18M235 275l18 18M235 201l18-18M161 275l-18 18" stroke="#ffd067" stroke-width="4" stroke-linecap="round"/>
+  <text x="142" y="364" fill="#F5F8FC" font-size="28" font-weight="700">Light</text>
+  <text x="126" y="392" fill="#9BB0C5" font-size="18">photosynthesis</text>
+  <path d="M218 270C300 340 350 390 450 450" stroke="#f27f98" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+
+  <circle cx="1002" cy="238" r="40" fill="#1a2940" stroke="rgba(255,255,255,.12)"/><text x="970" y="246" fill="#92d5ff" font-size="28" font-weight="700">CO₂</text>
+  <text x="954" y="364" fill="#F5F8FC" font-size="28" font-weight="700">CO₂ supply</text>
+  <text x="957" y="392" fill="#9BB0C5" font-size="18">carbon acquisition</text>
+  <path d="M982 270C900 340 850 390 750 450" stroke="#6fc8ff" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+
+  <circle cx="198" cy="654" r="40" fill="#1a2940" stroke="rgba(255,255,255,.12)"/><path d="M198 632v26" stroke="#ff8da7" stroke-width="6" stroke-linecap="round"/><circle cx="198" cy="676" r="7" fill="#ff8da7"/><path d="M198 632c16 0 28 12 28 28 0 17-10 30-28 30-17 0-28-13-28-30 0-16 12-28 28-28Z" stroke="#ff8da7" stroke-width="4"/>
+  <text x="118" y="780" fill="#F5F8FC" font-size="28" font-weight="700">Temperature</text>
+  <text x="126" y="808" fill="#9BB0C5" font-size="18">growth response</text>
+  <path d="M226 638C312 618 368 598 476 548" stroke="#ff8da7" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+
+  <rect x="934" y="588" width="160" height="126" rx="26" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.1)"/>
+  <path d="M966 668h24M1000 648h24M1034 628h24" stroke="#8FD38A" stroke-width="12" stroke-linecap="round"/>
+  <rect x="950" y="690" width="128" height="12" rx="6" fill="rgba(255,255,255,.12)"/><rect x="950" y="690" width="82" height="12" rx="6" fill="#ff7f97"/>
+  <text x="950" y="562" fill="#F5F8FC" font-size="28" font-weight="700">Dry matter &amp; yield</text>
+  <text x="950" y="536" fill="#9BB0C5" font-size="18">output traits</text>
+  <path d="M904 635C836 610 772 584 694 530" stroke="#8FD38A" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+</g></svg>

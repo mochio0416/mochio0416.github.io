@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#081829"/><stop offset="100%" stop-color="#10283d"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#9ADFB0"/><stop offset="100%" stop-color="#56A77C"/></linearGradient>
+<linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF7F97"/><stop offset="100%" stop-color="#D62E52"/></linearGradient>
+</defs>
+<rect width="1200" height="900" rx="36" fill="url(#bg)"/>
+<g opacity="0.09" stroke="#91A8BF"><path d="M0 180H1200"/><path d="M0 360H1200"/><path d="M0 540H1200"/><path d="M0 720H1200"/><path d="M240 0V900"/><path d="M480 0V900"/><path d="M720 0V900"/><path d="M960 0V900"/></g>
+<text x="70" y="86" fill="#F5F8FC" font-size="38" font-weight="700">Postharvest technology</text>
+<text x="70" y="126" fill="#9BB0C5" font-size="21">収穫後の品質変化を測り、殺菌・鮮度保持技術でロスを減らす</text>
+<rect x="248" y="150" width="704" height="580" rx="34" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.11)"/>
+<rect x="314" y="254" width="570" height="330" rx="32" fill="rgba(13,31,49,.35)" stroke="#6B8097" stroke-width="3"/>
+<text x="598" y="226" text-anchor="middle" fill="#F5F8FC" font-size="30" font-weight="700">Storage chamber</text>
+<rect x="370" y="300" width="458" height="120" rx="18" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.08)"/>
+<rect x="400" y="332" width="120" height="64" rx="18" fill="rgba(255,255,255,.08)"/>
+<rect x="540" y="332" width="120" height="64" rx="18" fill="rgba(255,255,255,.08)"/>
+<rect x="680" y="332" width="120" height="64" rx="18" fill="rgba(255,255,255,.08)"/>
+<g transform="translate(420 346) scale(.55)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g>
+<g transform="translate(560 346) scale(.55)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g>
+<g transform="translate(700 346) scale(.55)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g>
+<rect x="410" y="460" width="160" height="90" rx="20" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.08)"/>
+<text x="490" y="492" text-anchor="middle" fill="#F5F8FC" font-size="24" font-weight="700">Sterilization</text>
+<circle cx="455" cy="520" r="16" stroke="#7FDBFF" stroke-width="4"/><path d="M455 490v12M455 538v12M425 520h12M473 520h12" stroke="#7FDBFF" stroke-width="4" stroke-linecap="round"/>
+<path d="M503 504l16 32 16-32" stroke="#FFD067" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M602 506h72" stroke="#89A4BE" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/><path d="M664 496l18 10-18 10" stroke="#89A4BE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="690" y="460" width="130" height="90" rx="20" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.08)"/>
+<text x="755" y="492" text-anchor="middle" fill="#F5F8FC" font-size="24" font-weight="700">Quality</text>
+<path d="M724 523c10-10 20-15 29-14c8 1 17 8 26 6c10-2 17-13 30-14" stroke="#7FDBFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+<rect x="712" y="535" width="88" height="10" rx="5" fill="rgba(255,255,255,.10)"/><rect x="712" y="535" width="62" height="10" rx="5" fill="#8FD38A"/>
+<g transform="translate(300 626)"><circle cx="48" cy="0" r="18" fill="#1a2940"/><path d="M36 0h24M48 -12v24" stroke="#7FDBFF" stroke-width="4" stroke-linecap="round"/></g>
+<text x="300" y="674" fill="#9BB0C5" font-size="18">ozone / UV / CA</text>
+<g transform="translate(852 626)"><circle cx="48" cy="0" r="18" fill="#1a2940"/><path d="M34 -14 62 14M62 -14 34 14" stroke="#FF7F97" stroke-width="4" stroke-linecap="round"/></g>
+<text x="812" y="674" fill="#9BB0C5" font-size="18">mold control / loss reduction</text>
+</svg>

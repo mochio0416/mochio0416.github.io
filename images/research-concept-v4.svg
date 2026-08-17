@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1020" viewBox="0 0 1400 1020" fill="none"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#081829"/><stop offset="100%" stop-color="#10283d"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#9ADFB0"/><stop offset="100%" stop-color="#56A77C"/></linearGradient>
+<linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF7F97"/><stop offset="100%" stop-color="#D62E52"/></linearGradient>
+</defs>
+<rect width="1400" height="1020" rx="36" fill="url(#bg)"/>
+<g opacity="0.09" stroke="#91A8BF"><path d="M0 170H1400"/><path d="M0 340H1400"/><path d="M0 510H1400"/><path d="M0 680H1400"/><path d="M0 850H1400"/><path d="M200 0V1020"/><path d="M400 0V1020"/><path d="M600 0V1020"/><path d="M800 0V1020"/><path d="M1000 0V1020"/><path d="M1200 0V1020"/></g>
+<text x="80" y="86" fill="#F5F8FC" font-size="36" font-weight="700">Research concept</text>
+<text x="80" y="126" fill="#9BB0C5" font-size="21">多収性の生理学を核に、環境制御・品質保持・センシングへ展開する</text>
+<g>
+<rect x="80" y="170" width="300" height="160" rx="28" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<text x="230" y="226" text-anchor="middle" fill="#F5F8FC" font-size="30" font-weight="700">Controlled environment</text>
+<text x="230" y="264" text-anchor="middle" fill="#9BB0C5" font-size="18">施設園芸・環境制御</text>
+<path d="M156 296V242l74-36 74 36v54" stroke="#AFC3D6" stroke-width="4" stroke-linejoin="round"/>
+<path d="M190 296V264l40-20 40 20v32" stroke="#AFC3D6" stroke-width="3" stroke-linejoin="round"/>
+
+<rect x="1020" y="170" width="300" height="160" rx="28" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<text x="1170" y="226" text-anchor="middle" fill="#F5F8FC" font-size="30" font-weight="700">Sensing</text>
+<text x="1170" y="264" text-anchor="middle" fill="#9BB0C5" font-size="18">非破壊計測・画像解析</text>
+<rect x="1072" y="238" width="88" height="56" rx="14" fill="rgba(123,224,255,.08)" stroke="#7FDBFF" stroke-width="2"/>
+<circle cx="1100" cy="266" r="12" stroke="#FF6C8C" stroke-width="4"/><path d="M1124 281c10-10 18-10 27 0" stroke="#7FDBFF" stroke-width="3" stroke-linecap="round"/>
+<path d="M1184 252h26" stroke="#7FDBFF" stroke-width="9" stroke-linecap="round"/><path d="M1218 241h26" stroke="#A494FF" stroke-width="14" stroke-linecap="round"/>
+
+<rect x="1030" y="706" width="290" height="170" rx="28" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<text x="1175" y="764" text-anchor="middle" fill="#F5F8FC" font-size="30" font-weight="700">Postharvest</text>
+<text x="1175" y="802" text-anchor="middle" fill="#9BB0C5" font-size="18">品質保持・貯蔵</text>
+<path d="M1088 830h62" stroke="#FF7893" stroke-width="10" stroke-linecap="round"/><path d="M1160 830h62" stroke="#76A8D7" stroke-width="10" stroke-linecap="round"/><rect x="1088" y="846" width="176" height="20" rx="10" fill="rgba(255,255,255,.1)"/><circle cx="1116" cy="856" r="9" fill="#D62E52"/><circle cx="1140" cy="856" r="9" fill="#FF8098"/><circle cx="1164" cy="856" r="9" fill="#D62E52"/><circle cx="1216" cy="856" r="9" fill="#75A8D7"/><circle cx="1240" cy="856" r="9" fill="#93B4E9"/>
+
+<rect x="540" y="786" width="320" height="110" rx="28" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<text x="700" y="838" text-anchor="middle" fill="#F5F8FC" font-size="30" font-weight="700">Root system &amp; nitrogen</text>
+<text x="700" y="874" text-anchor="middle" fill="#9BB0C5" font-size="18">根系量・吸収能・利用効率</text>
+
+<text x="700" y="188" text-anchor="middle" fill="#F5F8FC" font-size="30" font-weight="700">Canopy architecture</text>
+<text x="700" y="224" text-anchor="middle" fill="#9BB0C5" font-size="18">積算受光量 → 乾物生産 → 収量</text>
+
+<rect x="520" y="290" width="360" height="360" rx="34" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<rect x="612" y="500" width="176" height="38" rx="14" fill="#8C6854"/>
+<rect x="596" y="474" width="208" height="34" rx="14" fill="#9A735C"/>
+<path d="M700 474V360" stroke="#88BA98" stroke-width="8" stroke-linecap="round"/>
+<path d="M640 386c-56-50-35-120 47-126c74-5 120 55 83 117c-41 12-84 18-130 9Z" fill="url(#leaf)"/>
+<path d="M710 374c56-54 123-28 130 35c6 61-48 104-119 85c-15-37-19-75-11-120Z" fill="url(#leaf)"/>
+<path d="M660 323c-49-42-31-102 36-114c67-12 109 38 90 93c-37 13-77 18-126 21Z" fill="url(#leaf)" opacity="0.94"/>
+<path d="M734 333c49-41 103-16 109 35c5 51-39 86-98 76c-12-29-15-64-11-111Z" fill="url(#leaf)" opacity="0.94"/>
+<path d="M624 474c-14 28-23 60-31 99M662 474c-10 31-14 64-14 106M700 474c2 33 4 66 4 106M738 474c11 30 20 62 30 103" stroke="#E8D2BF" stroke-width="5" stroke-linecap="round"/>
+<g transform="translate(612 432) scale(.75)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g>
+<g transform="translate(708 448) scale(.64)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g>
+
+<path d="M380 250C490 300 560 344 620 392" stroke="#F16F8A" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<path d="M1020 250C930 300 850 350 786 392" stroke="#F16F8A" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<path d="M1090 706C962 650 856 604 784 546" stroke="#F16F8A" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<path d="M700 786V596" stroke="#F16F8A" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+</g></svg>
