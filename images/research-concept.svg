@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Research concept visual</title>
+  <desc id="desc">Conceptual illustration linking strawberry physiology, roots, controlled environment horticulture, postharvest technology and sensing.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0c1b2b"/><stop offset="1" stop-color="#152c40"/></linearGradient>
+    <linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff6a85"/><stop offset="1" stop-color="#c92349"/></linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#84d4a6"/><stop offset="1" stop-color="#3f8d68"/></linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#796452"/><stop offset="1" stop-color="#3c332e"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#e94668" stop-opacity=".32"/><stop offset="1" stop-color="#e94668" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1270" cy="120" r="300" fill="url(#glow)"/>
+  <g opacity=".09" stroke="#fff"><path d="M0 150h1600M0 300h1600M0 450h1600M0 600h1600M0 750h1600"/><path d="M200 0v900M400 0v900M600 0v900M800 0v900M1000 0v900M1200 0v900M1400 0v900"/></g>
+
+  <!-- greenhouse -->
+  <g transform="translate(145 115)" fill="none" stroke="#96a9bb" stroke-width="6" opacity=".78">
+    <path d="M35 310V120L245 20l210 100v190"/>
+    <path d="M85 310V145L245 70l160 75v165" opacity=".55"/>
+    <path d="M245 20v290" opacity=".35"/>
+  </g>
+  <text x="190" y="475" fill="#dce7f1" font-family="Inter,Arial" font-size="27" font-weight="700">CONTROLLED</text>
+  <text x="190" y="510" fill="#8fa2b5" font-family="Inter,Arial" font-size="22">ENVIRONMENT</text>
+
+  <!-- central strawberry plant -->
+  <g transform="translate(560 78)">
+    <rect x="90" y="455" width="540" height="90" rx="18" fill="url(#soil)"/>
+    <path d="M360 460c-12 40-16 86-12 141M360 470c52 46 74 98 69 159M357 480c-56 38-86 87-95 145M360 510c25 34 30 66 24 100M356 525c-31 29-48 58-52 91" fill="none" stroke="#d9c7b4" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+    <g fill="url(#leaf)">
+      <ellipse cx="360" cy="250" rx="115" ry="62" transform="rotate(-8 360 250)"/>
+      <ellipse cx="274" cy="326" rx="110" ry="58" transform="rotate(22 274 326)"/>
+      <ellipse cx="452" cy="330" rx="112" ry="60" transform="rotate(-23 452 330)"/>
+      <ellipse cx="230" cy="225" rx="92" ry="48" transform="rotate(35 230 225)"/>
+      <ellipse cx="490" cy="220" rx="94" ry="49" transform="rotate(-34 490 220)"/>
+    </g>
+    <g stroke="#69a57e" stroke-width="11" stroke-linecap="round"><path d="M360 455V278"/><path d="M360 340l-86-90"/><path d="M360 340l90-94"/></g>
+    <g transform="translate(190 333)"><path d="M80 42c-43-7-75 18-66 57 8 39 43 81 66 99 24-19 60-60 67-99 8-39-24-64-67-57Z" fill="url(#berry)"/><path d="M80 43c-12-25-31-38-52-38 8 18 18 29 34 38-20-5-36-2-48 9 17 11 34 13 53 7-8 13-12 25-10 40 13-5 21-14 25-29 5 15 14 24 27 28 2-14-2-27-10-39 18 5 35 2 51-9-13-10-29-13-48-7 15-10 26-22 34-39-22 0-42 14-56 39Z" fill="url(#leaf)"/></g>
+    <g transform="translate(430 350) scale(.78)"><path d="M80 42c-43-7-75 18-66 57 8 39 43 81 66 99 24-19 60-60 67-99 8-39-24-64-67-57Z" fill="url(#berry)"/><path d="M80 43c-12-25-31-38-52-38 8 18 18 29 34 38-20-5-36-2-48 9 17 11 34 13 53 7-8 13-12 25-10 40 13-5 21-14 25-29 5 15 14 24 27 28 2-14-2-27-10-39 18 5 35 2 51-9-13-10-29-13-48-7 15-10 26-22 34-39-22 0-42 14-56 39Z" fill="url(#leaf)"/></g>
+  </g>
+
+  <!-- physiology callouts -->
+  <g font-family="Inter,Arial">
+    <g transform="translate(650 76)"><rect width="350" height="82" rx="18" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".14"/><text x="24" y="34" fill="#ff88a0" font-size="17" font-weight="800">LIGHT INTERCEPTION</text><text x="24" y="59" fill="#aebdcb" font-size="17">Canopy architecture → dry matter</text></g>
+    <g transform="translate(690 650)"><rect width="330" height="82" rx="18" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".14"/><text x="24" y="34" fill="#ff88a0" font-size="17" font-weight="800">ROOT · NITROGEN</text><text x="24" y="59" fill="#aebdcb" font-size="17">Acquisition → use efficiency</text></g>
+  </g>
+
+  <!-- sensor / hyperspectral -->
+  <g transform="translate(1160 280)">
+    <rect x="0" y="0" width="250" height="165" rx="26" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".16"/>
+    <rect x="30" y="38" width="110" height="72" rx="12" fill="#203b51" stroke="#7ba1bc" stroke-width="3"/>
+    <circle cx="85" cy="74" r="20" fill="none" stroke="#ff6f8b" stroke-width="5"/>
+    <path d="M154 51h58M154 72h42M154 93h67" stroke="#86a2b8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M38 130c28-24 52-14 76-3 27 13 53 6 92-13" fill="none" stroke="#8be0b1" stroke-width="5"/>
+    <text x="0" y="205" fill="#dce7f1" font-family="Inter,Arial" font-size="27" font-weight="700">SENSING</text>
+    <text x="0" y="238" fill="#8fa2b5" font-family="Inter,Arial" font-size="21">NON-DESTRUCTIVE</text>
+  </g>
+
+  <!-- postharvest -->
+  <g transform="translate(1140 575)">
+    <rect x="0" y="0" width="290" height="150" rx="26" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".16"/>
+    <path d="M28 50h234v68H28z" fill="#1a3146" stroke="#7993aa" stroke-width="3"/>
+    <path d="M48 68h194M48 90h194" stroke="#617b91" stroke-width="4" opacity=".7"/>
+    <circle cx="90" cy="83" r="17" fill="#d83459"/><circle cx="145" cy="83" r="17" fill="#e64e6e"/><circle cx="200" cy="83" r="17" fill="#cd264d"/>
+    <circle cx="252" cy="29" r="15" fill="none" stroke="#91d7ff" stroke-width="4"/><path d="M252 8v-11M252 55v11M231 29h-11M284 29h-11" stroke="#91d7ff" stroke-width="4" stroke-linecap="round"/>
+    <text x="0" y="192" fill="#dce7f1" font-family="Inter,Arial" font-size="27" font-weight="700">POSTHARVEST</text>
+    <text x="0" y="225" fill="#8fa2b5" font-family="Inter,Arial" font-size="21">QUALITY · STORAGE</text>
+  </g>
+
+  <!-- connectors -->
+  <g fill="none" stroke="#ff7590" stroke-width="3" stroke-dasharray="10 12" opacity=".55"><path d="M515 340C590 290 615 270 690 245"/><path d="M1020 410c80-20 100-50 140-70"/><path d="M1020 570c70 35 85 70 120 92"/></g>
+  <g fill="#ff7590"><circle cx="515" cy="340" r="7"/><circle cx="1020" cy="410" r="7"/><circle cx="1020" cy="570" r="7"/></g>
+</svg>
