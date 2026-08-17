@@ -1,0 +1,15 @@
+{
+  "name": "Yuya Mochizuki | Horticultural Science",
+  "short_name": "Yuya Mochizuki",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b1827",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
