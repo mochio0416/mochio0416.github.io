@@ -1,0 +1,14 @@
+v10.42
+Base: v10.41
+
+Homepage refinements based on the approved mockup:
+- Top headline balanced into:
+  From plant
+  physiology to
+  horticultural
+  innovation.
+- Right-side 4 research cards enlarged slightly.
+- Research Concept: removes the large unused blank area in the right card.
+- About: portrait/background balance adjusted to match the approved mockup more closely.
+- Portrait converted to lightweight WebP to reduce GitHub upload/deployment failures.
+- All other sections and Research detail pages are unchanged.
