@@ -2164,3 +2164,275 @@ body[data-page="controlled-environment"] .detail-theme-hero h1{
     object-fit:contain;
   }
 }
+
+
+/* =========================================================
+   v10.38 — research detail page-specific polish
+   01: stable title line breaks
+   02/04: portrait artwork frames hug the image (no side gutters)
+   03: stable title lines and no overlap with artwork
+   ========================================================= */
+
+@media (min-width:1001px){
+
+  /* Manual title lines should never break again inside a line. */
+  .detail-theme-hero .detail-title-line{
+    display:inline-block;
+    white-space:nowrap;
+  }
+
+  /* 01 High-yield: slightly more room for the Japanese heading. */
+  .page-high-yield .detail-theme-hero .detail-hero-grid{
+    grid-template-columns:minmax(0,.98fr) minmax(0,1.02fr);
+    gap:42px;
+  }
+  .page-high-yield .detail-theme-hero h1{
+    font-size:clamp(3.25rem,4.25vw,4.25rem);
+    line-height:1.04;
+    max-width:none;
+  }
+  .page-high-yield .detail-theme-hero .theme-visual-figure{
+    width:min(100%,650px);
+    max-width:650px;
+  }
+  .page-high-yield .detail-theme-hero .theme-visual-image{
+    width:100%;
+    height:auto;
+    max-height:none;
+    object-fit:contain;
+    background:transparent;
+  }
+
+  /* 02 / 04 are portrait originals (1122 x 1402).
+     At ~520 px wide they become ~650 px tall: same visual height as 01/03,
+     while the rounded frame now hugs the artwork instead of showing empty side bars. */
+  .page-controlled-environment .detail-theme-hero .theme-visual-figure,
+  .page-sensing .detail-theme-hero .theme-visual-figure{
+    width:min(100%,520px);
+    max-width:520px;
+    margin-left:auto;
+  }
+  .page-controlled-environment .detail-theme-hero .theme-visual-image,
+  .page-sensing .detail-theme-hero .theme-visual-image{
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:none;
+    aspect-ratio:auto;
+    object-fit:contain;
+    background:transparent;
+  }
+
+  /* Keep enough room for the text beside the narrower portrait artwork. */
+  .page-controlled-environment .detail-theme-hero .detail-hero-grid,
+  .page-sensing .detail-theme-hero .detail-hero-grid{
+    grid-template-columns:minmax(0,1fr) minmax(500px,.90fr);
+    gap:54px;
+  }
+
+  /* 03 Postharvest: deliberate 3-line Japanese title + full square artwork.
+     This prevents the large heading from entering the visual column. */
+  .page-postharvest .detail-theme-hero .detail-hero-grid{
+    grid-template-columns:minmax(0,.96fr) minmax(0,1.04fr);
+    gap:54px;
+  }
+  .page-postharvest .detail-theme-hero h1{
+    font-size:clamp(3.15rem,4.25vw,4.35rem);
+    line-height:1.04;
+    max-width:none;
+  }
+  .page-postharvest .detail-theme-hero .theme-visual-figure{
+    width:min(100%,650px);
+    max-width:650px;
+    margin-left:auto;
+  }
+  .page-postharvest .detail-theme-hero .theme-visual-image{
+    width:100%;
+    height:auto;
+    max-height:none;
+    object-fit:contain;
+    background:transparent;
+  }
+
+  /* Captions sit consistently under all four images. */
+  .detail-theme-hero .theme-visual-caption{
+    width:100%;
+    max-width:650px;
+    margin:12px auto 0;
+    min-height:42px;
+  }
+}
+
+@media (max-width:1000px){
+  .detail-theme-hero .detail-title-line{
+    white-space:normal;
+  }
+  .page-controlled-environment .detail-theme-hero .theme-visual-figure,
+  .page-sensing .detail-theme-hero .theme-visual-figure,
+  .page-high-yield .detail-theme-hero .theme-visual-figure,
+  .page-postharvest .detail-theme-hero .theme-visual-figure{
+    width:min(100%,650px);
+    max-width:650px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .page-controlled-environment .detail-theme-hero .theme-visual-image,
+  .page-sensing .detail-theme-hero .theme-visual-image,
+  .page-high-yield .detail-theme-hero .theme-visual-image,
+  .page-postharvest .detail-theme-hero .theme-visual-image{
+    width:100%;
+    height:auto;
+    max-height:none;
+  }
+}
+
+
+/* =========================================================
+   v10.39 — top hero + Research Concept balance refinement
+   ========================================================= */
+
+@media (min-width:1101px){
+
+  /* TOP: slightly smaller headline, larger research-map visual */
+  .hero .container{
+    width:min(calc(100% - 48px),1240px);
+  }
+
+  .hero-grid{
+    grid-template-columns:minmax(0,.96fr) minmax(0,1.04fr);
+    gap:34px;
+    align-items:center;
+  }
+
+  .hero h1{
+    font-size:clamp(3.25rem,4.85vw,5.35rem);
+    line-height:.985;
+    max-width:700px;
+  }
+
+  .hero .lead{
+    max-width:650px;
+  }
+
+  .hero-visual{
+    min-height:540px;
+  }
+
+  .hero-research-map{
+    width:min(100%,650px);
+    height:520px;
+  }
+
+  .hero-crop-hub{
+    left:158px;
+    right:158px;
+    top:126px;
+    bottom:126px;
+  }
+
+  .hero-crop-hub img{
+    width:94%;
+    max-height:162px;
+  }
+
+  /* CONCEPT: give the whole section slightly more width. */
+  #concept .container{
+    width:min(calc(100% - 48px),1300px);
+  }
+
+  /* Top heading: left title + wider explanatory text.
+     The Japanese sentence now naturally fits in about two lines. */
+  #concept .concept-heading{
+    display:grid;
+    grid-template-columns:minmax(300px,.72fr) minmax(0,1.28fr);
+    gap:54px;
+    align-items:end;
+    margin-bottom:42px;
+  }
+
+  #concept .concept-heading .section-intro{
+    max-width:none;
+    width:100%;
+    font-size:.95rem;
+    line-height:1.8;
+  }
+
+  /* Main concept: visual remains dominant, while copy is wide enough
+     for a clean two-line title and all four points. */
+  #concept .concept-layout{
+    grid-template-columns:minmax(0,1.28fr) minmax(405px,.72fr);
+    gap:22px;
+    align-items:stretch;
+  }
+
+  #concept .concept-media,
+  #concept .concept-copy{
+    height:548px;
+    min-height:548px;
+  }
+
+  #concept .concept-media{
+    padding:14px;
+  }
+
+  #concept .concept-image{
+    width:100%;
+    height:auto;
+    aspect-ratio:16/9;
+    object-fit:contain;
+  }
+
+  #concept .concept-copy{
+    padding:22px 26px 20px;
+    overflow:hidden;
+  }
+
+  #concept .concept-kicker{
+    margin-bottom:10px;
+  }
+
+  #concept .concept-copy h3{
+    font-size:clamp(1.42rem,1.50vw,1.62rem);
+    line-height:1.14;
+    margin:0 0 10px;
+    letter-spacing:-.035em;
+  }
+
+  #concept .concept-title-line{
+    display:inline-block;
+    white-space:nowrap;
+  }
+
+  #concept .concept-copy>p:not(.concept-kicker){
+    font-size:.86rem;
+    line-height:1.55;
+    margin-bottom:8px;
+  }
+
+  #concept .concept-points{
+    margin-top:auto;
+  }
+
+  #concept .concept-point{
+    grid-template-columns:32px 1fr;
+    gap:8px;
+    padding:7px 0;
+  }
+
+  #concept .concept-point strong{
+    font-size:.82rem;
+    line-height:1.24;
+  }
+
+  #concept .concept-caption{
+    padding-top:8px;
+    font-size:.66rem;
+    line-height:1.45;
+  }
+}
+
+@media (max-width:1100px){
+  #concept .concept-title-line{
+    white-space:normal;
+  }
+}
