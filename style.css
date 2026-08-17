@@ -2436,3 +2436,567 @@ body[data-page="controlled-environment"] .detail-theme-hero h1{
     white-space:normal;
   }
 }
+
+
+/* =========================================================
+   v10.40 — Research 01–04: KAKENHI-like 50:50 balance
+   Text column and visual column are equal in width.
+   Artwork is intentionally restrained so it does not dominate.
+   ========================================================= */
+
+@media (min-width:1001px){
+
+  /* Equal columns, like the KAKENHI detail pages. */
+  .detail-theme-hero .detail-hero-grid,
+  .page-high-yield .detail-theme-hero .detail-hero-grid,
+  .page-controlled-environment .detail-theme-hero .detail-hero-grid,
+  .page-postharvest .detail-theme-hero .detail-hero-grid,
+  .page-sensing .detail-theme-hero .detail-hero-grid{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+    gap:50px !important;
+    align-items:center !important;
+  }
+
+  /* Text gets the same visual presence as the artwork. */
+  .detail-theme-hero .detail-hero-copy{
+    width:100%;
+    max-width:610px !important;
+    align-self:center;
+  }
+
+  .detail-theme-hero .detail-lead{
+    max-width:590px;
+  }
+
+  /* Keep the artwork centered in its half, rather than pushed to the far right. */
+  .detail-theme-hero .detail-visual{
+    width:100%;
+    min-height:0;
+    display:flex;
+    justify-content:center !important;
+    align-items:center !important;
+    align-self:center !important;
+    justify-self:stretch !important;
+  }
+
+  .detail-theme-hero .theme-visual-figure{
+    width:100%;
+    margin:0 auto !important;
+  }
+
+  /* Square / near-square artwork: deliberately a little smaller. */
+  .page-high-yield .detail-theme-hero .theme-visual-figure,
+  .page-postharvest .detail-theme-hero .theme-visual-figure{
+    max-width:570px !important;
+  }
+
+  /* Portrait artwork: same column width, but sized by its natural aspect ratio.
+     No artificial side panels or cropping. */
+  .page-controlled-environment .detail-theme-hero .theme-visual-figure,
+  .page-sensing .detail-theme-hero .theme-visual-figure{
+    max-width:490px !important;
+  }
+
+  .detail-theme-hero .theme-visual-image{
+    display:block;
+    width:100% !important;
+    height:auto !important;
+    max-height:none !important;
+    aspect-ratio:auto !important;
+    object-fit:contain !important;
+    object-position:center center !important;
+    background:transparent !important;
+  }
+
+  /* Captions align with the actual artwork width. */
+  .page-high-yield .theme-visual-caption,
+  .page-postharvest .theme-visual-caption{
+    max-width:570px;
+  }
+
+  .page-controlled-environment .theme-visual-caption,
+  .page-sensing .theme-visual-caption{
+    max-width:490px;
+  }
+}
+
+@media (max-width:1000px){
+  /* Mobile/tablet remain stacked. */
+  .detail-theme-hero .detail-hero-grid{
+    grid-template-columns:1fr !important;
+    gap:28px !important;
+  }
+
+  .detail-theme-hero .theme-visual-figure{
+    margin:0 auto !important;
+  }
+}
+
+
+/* =========================================================
+   v10.41 — portfolio hero + portrait About
+   Based on v10.40. Other sections and detail pages unchanged.
+   ========================================================= */
+
+/* Header closer to the approved mockup */
+.site-header{
+  background:rgba(5,17,31,.90);
+}
+.header-inner{
+  height:68px;
+}
+.brand-mark{
+  width:34px;
+  height:34px;
+  border-radius:10px;
+}
+.brand-text{
+  font-size:.96rem;
+}
+.nav{
+  gap:25px;
+}
+.nav a{
+  font-size:.77rem;
+}
+
+/* ---------- HERO ---------- */
+.hero-portfolio{
+  min-height:720px;
+  padding:126px 0 68px;
+}
+.hero-portfolio .hero-gridlines{
+  opacity:.055;
+  background-size:58px 58px;
+}
+.hero-portfolio-grid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+  gap:54px;
+  align-items:center;
+}
+.hero-portfolio-copy{
+  min-width:0;
+}
+.hero-portfolio .kicker{
+  margin-bottom:30px;
+}
+.hero-portfolio h1{
+  margin:0;
+  max-width:650px;
+  font-size:clamp(3.4rem,5.1vw,5.55rem);
+  line-height:1.02;
+  letter-spacing:-.062em;
+}
+.hero-portfolio h1 span{
+  display:block;
+  color:#8292a6;
+  margin-top:.12em;
+}
+.hero-accent-line{
+  width:64px;
+  height:3px;
+  border-radius:99px;
+  background:linear-gradient(90deg,#ff5f82,#ff8da5);
+  margin:28px 0 0;
+}
+.hero-portfolio .lead{
+  margin-top:26px;
+  max-width:625px;
+  font-size:1.00rem;
+  line-height:1.9;
+}
+.hero-portfolio-actions{
+  margin-top:28px;
+}
+.hero-portfolio-stats{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+  margin-top:30px;
+  max-width:590px;
+}
+.hero-portfolio-stats>span{
+  min-width:0;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:13px;
+  padding:11px 13px;
+  background:rgba(255,255,255,.025);
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+}
+.hero-portfolio-stats b{
+  color:#fff;
+  font-size:.75rem;
+}
+.hero-portfolio-stats small{
+  color:#8293a8;
+  font-size:.61rem;
+  line-height:1.3;
+}
+
+/* Four large linked cards */
+.hero-pillars{
+  min-width:0;
+}
+.hero-pillars-heading{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+  gap:15px;
+  margin:0 10px 18px;
+}
+.hero-pillars-heading span{
+  height:1px;
+  background:linear-gradient(90deg,transparent,#ff6f8d);
+}
+.hero-pillars-heading span:last-child{
+  background:linear-gradient(90deg,#ff6f8d,transparent);
+}
+.hero-pillars-heading strong{
+  color:#eef3f9;
+  font-size:.78rem;
+  letter-spacing:.16em;
+  white-space:nowrap;
+}
+.hero-pillar-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.hero-pillar-card{
+  position:relative;
+  min-height:250px;
+  border:1px solid rgba(255,114,142,.55);
+  border-radius:20px;
+  overflow:hidden;
+  background:#102137;
+  box-shadow:0 20px 44px rgba(0,0,0,.18);
+  color:#fff;
+  transform:translateZ(0);
+  transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;
+}
+.hero-pillar-card:hover{
+  transform:translateY(-5px);
+  border-color:#ff8aa3;
+  box-shadow:0 28px 58px rgba(0,0,0,.28);
+}
+.pillar-media{
+  position:absolute;
+  inset:0;
+}
+.pillar-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:saturate(.93) contrast(1.02);
+  transform:scale(1.01);
+  transition:transform .35s ease;
+}
+.hero-pillar-card:hover .pillar-media img{
+  transform:scale(1.045);
+}
+.pillar-overlay{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg,rgba(5,18,33,.06) 0%,rgba(5,18,33,.28) 42%,rgba(5,18,33,.96) 82%),
+    linear-gradient(90deg,rgba(5,18,33,.34),transparent 65%);
+}
+.pillar-no{
+  position:absolute;
+  top:16px;
+  left:17px;
+  color:#ff7e9a;
+  font-weight:850;
+  font-size:.84rem;
+  letter-spacing:.04em;
+}
+.pillar-copy{
+  position:absolute;
+  left:18px;
+  right:18px;
+  bottom:15px;
+}
+.pillar-copy h3{
+  margin:0 0 6px;
+  color:#fff;
+  font-size:1.12rem;
+  line-height:1.08;
+  letter-spacing:-.035em;
+}
+.pillar-copy p{
+  margin:0;
+  color:#b6c3d2;
+  font-size:.66rem;
+  line-height:1.45;
+}
+.pillar-arrow{
+  position:absolute;
+  right:15px;
+  bottom:15px;
+  width:27px;
+  height:27px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#ee466a;
+  color:#fff;
+  font-size:.74rem;
+}
+
+/* ---------- ABOUT WITH PORTRAIT ---------- */
+.about-portrait-section{
+  background:#fff;
+  padding-top:96px;
+  padding-bottom:104px;
+}
+.about-portrait-grid{
+  display:grid;
+  grid-template-columns:minmax(330px,.82fr) minmax(0,1.18fr);
+  gap:60px;
+  align-items:center;
+}
+.about-photo-card{
+  position:relative;
+  min-height:610px;
+  overflow:hidden;
+  border-radius:30px;
+  border:1px solid #e1e7ed;
+  background:#eaf0ed;
+  box-shadow:0 28px 70px rgba(21,41,61,.11);
+}
+.about-photo-bg{
+  position:absolute;
+  inset:-22px;
+  background:
+    linear-gradient(180deg,rgba(244,248,247,.22),rgba(232,239,236,.36)),
+    url("images/research/controlled-environment.jpg?v=1036") center 58%/cover no-repeat;
+  filter:blur(3px) saturate(.48) brightness(1.35);
+  transform:scale(1.08);
+  opacity:.52;
+}
+.about-photo-glow{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.22),transparent 45%),
+    linear-gradient(0deg,rgba(8,25,40,.08),transparent 28%);
+}
+.about-photo-person{
+  position:absolute;
+  z-index:2;
+  left:50%;
+  bottom:-48px;
+  transform:translateX(-50%);
+  width:auto;
+  height:108%;
+  max-width:none;
+  object-fit:contain;
+  filter:drop-shadow(0 18px 24px rgba(10,25,38,.18));
+}
+.about-photo-label{
+  position:absolute;
+  z-index:3;
+  left:20px;
+  bottom:18px;
+  padding:9px 12px;
+  border-radius:12px;
+  background:rgba(255,255,255,.86);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.70);
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+.about-photo-label strong{
+  color:#142236;
+  font-size:.76rem;
+}
+.about-photo-label span{
+  color:#7c8997;
+  font-size:.58rem;
+}
+
+.about-portrait-copy .section-number{
+  margin-bottom:14px;
+}
+.about-portrait-copy h2{
+  margin:0;
+  color:var(--ink);
+  font-size:clamp(2.8rem,4vw,4.45rem);
+  line-height:1.02;
+  letter-spacing:-.058em;
+}
+.about-portrait-lead{
+  max-width:690px;
+  margin:25px 0 0;
+  color:#5c6a79;
+  font-size:.98rem;
+  line-height:1.85;
+}
+.about-profile-cards{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:13px;
+  margin-top:27px;
+}
+.about-profile-card{
+  min-height:145px;
+  padding:18px 17px;
+  border:1px solid #e3e8ee;
+  border-radius:17px;
+  background:#fff;
+  box-shadow:0 12px 30px rgba(20,40,61,.045);
+}
+.about-profile-icon{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:#e64164;
+  background:#fff0f3;
+  margin-bottom:14px;
+}
+.about-profile-icon svg{
+  width:22px;
+  height:22px;
+}
+.about-profile-card small{
+  display:block;
+  color:#e64064;
+  font-size:.64rem;
+  font-weight:800;
+  letter-spacing:.10em;
+  margin-bottom:7px;
+}
+.about-profile-card strong{
+  display:block;
+  color:#17263a;
+  font-size:.86rem;
+  line-height:1.45;
+}
+.about-belief{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:46px 1fr;
+  gap:17px;
+  align-items:center;
+  padding:18px 20px;
+  border:1px solid #e6e9ee;
+  border-left:3px solid #e94668;
+  border-radius:16px;
+  background:#fff;
+}
+.about-belief-mark{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  border:1px solid #f2a2b3;
+  color:#e94668;
+  font-size:1.3rem;
+}
+.about-belief small{
+  display:block;
+  color:#e64064;
+  font-size:.67rem;
+  font-weight:800;
+  letter-spacing:.09em;
+  margin-bottom:5px;
+}
+.about-belief p{
+  margin:0;
+  color:#667484;
+  font-size:.78rem;
+  line-height:1.68;
+}
+
+/* Responsive */
+@media (max-width:1100px){
+  .hero-portfolio{
+    min-height:auto;
+    padding-top:118px;
+  }
+  .hero-portfolio-grid{
+    grid-template-columns:1fr;
+    gap:42px;
+  }
+  .hero-portfolio-copy{
+    max-width:760px;
+  }
+  .hero-pillar-grid{
+    max-width:760px;
+  }
+  .about-portrait-grid{
+    grid-template-columns:minmax(290px,.75fr) minmax(0,1.25fr);
+    gap:38px;
+  }
+  .about-photo-card{
+    min-height:560px;
+  }
+}
+@media (max-width:820px){
+  .hero-portfolio h1{
+    font-size:clamp(3.0rem,10vw,4.4rem);
+  }
+  .hero-portfolio-stats{
+    grid-template-columns:1fr;
+    max-width:360px;
+  }
+  .hero-pillar-grid{
+    grid-template-columns:1fr 1fr;
+  }
+  .hero-pillar-card{
+    min-height:220px;
+  }
+  .about-portrait-grid{
+    grid-template-columns:1fr;
+  }
+  .about-photo-card{
+    width:min(100%,520px);
+    min-height:620px;
+    margin:0 auto;
+  }
+}
+@media (max-width:560px){
+  .hero-portfolio{
+    padding-top:108px;
+    padding-bottom:54px;
+  }
+  .hero-portfolio-grid{
+    gap:34px;
+  }
+  .hero-pillar-grid{
+    grid-template-columns:1fr;
+  }
+  .hero-pillar-card{
+    min-height:230px;
+  }
+  .hero-pillars-heading{
+    margin-left:0;
+    margin-right:0;
+  }
+  .hero-pillars-heading strong{
+    font-size:.69rem;
+  }
+  .about-portrait-section{
+    padding-top:72px;
+  }
+  .about-photo-card{
+    min-height:500px;
+  }
+  .about-photo-person{
+    height:104%;
+    bottom:-35px;
+  }
+  .about-profile-cards{
+    grid-template-columns:1fr;
+  }
+}
