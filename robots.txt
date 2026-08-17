@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-# Add an absolute Sitemap URL here after the public domain is fixed.
+Sitemap: https://mochio0416.github.io/sitemap.xml
