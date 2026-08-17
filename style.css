@@ -1754,3 +1754,157 @@ body[data-page="controlled-environment"] .detail-theme-hero h1{
   .page-controlled-environment .detail-theme-hero .detail-hero-grid{grid-template-columns:1fr;gap:28px}
   .page-controlled-environment .detail-theme-hero .theme-visual-figure{max-width:640px;margin:0 auto}
 }
+
+
+/* v10.29 — interactive hero map + concept cleanup */
+.hero-visual{min-height:600px;display:flex;align-items:center;justify-content:center;overflow:visible}
+.hero-research-map{position:relative;width:min(100%,650px);height:570px;margin:0 auto}
+.hero-map-connectors{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-map-connectors svg{display:block;width:100%;height:100%}
+.hero-map-connectors path{fill:none;stroke:#ff718f;stroke-width:2.2;stroke-dasharray:5 5;opacity:.9}
+.hero-map-connectors circle{fill:#ff7895;filter:drop-shadow(0 0 7px rgba(255,120,149,.8))}
+.hero-crop-hub{position:absolute;left:170px;right:170px;top:150px;bottom:150px;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1.5px solid rgba(255,119,146,.78);border-radius:34px;background:linear-gradient(145deg,rgba(34,51,73,.97),rgba(15,31,50,.98));box-shadow:0 26px 65px rgba(0,0,0,.28);overflow:hidden;padding:24px;text-align:center}
+.hero-crop-hub:hover{border-color:#ff8ca4;transform:translateY(-2px)}
+.hero-crop-kicker{position:absolute;top:24px;left:28px;color:#ff8ca4;font-size:.68rem;font-weight:800;letter-spacing:.18em}
+.hero-crop-dot{position:absolute;top:25px;right:28px;width:10px;height:10px;border-radius:50%;background:#ff7895;box-shadow:0 0 0 8px rgba(255,120,149,.09)}
+.hero-crop-hub img{display:block;width:94%;height:auto;max-height:205px;object-fit:contain;margin-top:20px}
+.hero-map-card{position:absolute;z-index:2;width:166px;height:135px;padding:17px 18px;border:1px solid rgba(255,127,151,.60);border-radius:22px;background:linear-gradient(145deg,rgba(30,45,65,.98),rgba(12,28,47,.98));box-shadow:0 18px 44px rgba(0,0,0,.24);color:#fff;display:flex;flex-direction:column;transition:.2s ease}
+.hero-map-card:hover{transform:translateY(-4px);border-color:#ff91a8;box-shadow:0 24px 54px rgba(0,0,0,.30)}
+.map-card-01{left:0;top:42px}.map-card-02{right:0;top:42px}.map-card-03{left:0;bottom:42px}.map-card-04{right:0;bottom:42px}
+.map-card-index{color:#ff8da5;font-size:.74rem;font-weight:800;margin-bottom:5px}
+.map-card-icon{position:absolute;right:14px;top:13px;width:40px;height:40px;color:#ff7895}
+.map-card-icon svg{display:block;width:100%;height:100%}
+.hero-map-card strong{font-size:.86rem;line-height:1.2;max-width:100px;margin-top:auto;margin-bottom:8px}
+.map-card-line{width:28px;height:2px;background:#ff7895;border-radius:2px}
+
+/* concept: equal boxes, no overflow, preserve image */
+#concept .concept-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:stretch}
+#concept .concept-media,#concept .concept-copy{min-height:610px;height:610px;box-sizing:border-box;overflow:hidden}
+#concept .concept-media{display:flex;flex-direction:column;padding:18px}
+#concept .concept-image{flex:1;min-height:0;width:100%;height:100%;object-fit:contain;object-position:center;background:#0d1e30;border-radius:18px}
+#concept .concept-caption{flex:0 0 auto;padding:12px 8px 2px;font-size:.70rem;line-height:1.6}
+#concept .concept-copy{padding:34px 36px;display:flex;flex-direction:column}
+#concept .concept-copy h3{font-size:clamp(1.72rem,2.05vw,2.35rem);line-height:1.18;margin:0 0 18px;overflow-wrap:anywhere}
+#concept .concept-copy>p:not(.concept-kicker){font-size:.94rem;line-height:1.75;margin:0 0 14px}
+#concept .concept-points{margin-top:auto}
+#concept .concept-point{padding:11px 0;grid-template-columns:40px 1fr}
+#concept .concept-point strong{font-size:.92rem;line-height:1.4}
+
+@media(max-width:1100px){
+  .hero-research-map{width:min(100%,620px);height:560px}
+  .hero-crop-hub{left:160px;right:160px}
+  #concept .concept-layout{grid-template-columns:1fr}
+  #concept .concept-media,#concept .concept-copy{height:auto;min-height:0;overflow:visible}
+}
+@media(max-width:700px){
+  .hero-research-map{height:650px;width:min(100%,500px)}
+  .hero-crop-hub{left:30px;right:30px;top:160px;bottom:160px}
+  .hero-map-connectors{display:none}
+  .hero-map-card{width:145px;height:112px;padding:13px 14px}
+  .map-card-01{left:0;top:20px}.map-card-02{right:0;top:20px}.map-card-03{left:0;bottom:20px}.map-card-04{right:0;bottom:20px}
+  .map-card-icon{width:32px;height:32px}
+  .hero-map-card strong{font-size:.76rem}
+  .hero-crop-hub img{max-height:195px;width:96%}
+}
+
+
+/* v10.30 — ABOUT profile language separation */
+#about .profile-strip strong{
+  line-height:1.45;
+}
+#about .profile-strip span:not(.profile-strip-icon){
+  white-space:nowrap;
+}
+
+
+/* =========================================================
+   v10.31 — unified surface rhythm
+   Navy: research identity / entry points
+   White: reading-heavy information
+   Soft gray: section transitions / supporting research info
+   ========================================================= */
+
+:root{
+  --surface-white:#ffffff;
+  --surface-soft:#f6f8fb;
+}
+
+/* Home page rhythm */
+.status-strip{
+  background:var(--surface-white);
+}
+
+.concept-section{
+  background:var(--surface-soft);
+  border-top:0;
+  border-bottom:1px solid var(--line);
+}
+
+.about-section{
+  background:var(--surface-white);
+}
+
+.research-section{
+  background:var(--surface-soft);
+  border-top:1px solid rgba(20,39,60,.035);
+  border-bottom:1px solid rgba(20,39,60,.035);
+}
+
+.publication-section{
+  background:var(--surface-white);
+}
+
+.news-section{
+  background:var(--surface-soft);
+  border-top:1px solid rgba(20,39,60,.035);
+  border-bottom:1px solid rgba(20,39,60,.035);
+}
+
+.journey-section{
+  background:var(--surface-white);
+}
+
+/* Replace the slightly yellow/cream area with the same neutral gray
+   used elsewhere so the site has one consistent background system. */
+.activity-section{
+  background:var(--surface-soft);
+  border-top:1px solid rgba(20,39,60,.035);
+  border-bottom:1px solid rgba(20,39,60,.035);
+}
+
+.collaborate-section{
+  background:var(--surface-white);
+}
+
+/* Contact remains a dark closing section. */
+.contact-section.section-dark{
+  background:var(--navy);
+}
+
+/* Research / project detail pages:
+   navy hero -> soft gray question -> white body -> soft gray evidence -> white navigation */
+.detail-thesis{
+  background:var(--surface-soft);
+  border-bottom:1px solid var(--line);
+}
+
+.detail-body{
+  background:var(--surface-white);
+}
+
+.detail-evidence{
+  background:var(--surface-soft);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.detail-next{
+  background:var(--surface-white);
+  border-top:0;
+}
+
+/* Keep the transition into the footer/contact clean. */
+.detail-next + footer,
+.contact-section + footer{
+  border-top:1px solid rgba(255,255,255,.06);
+}

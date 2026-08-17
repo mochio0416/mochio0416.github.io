@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="t d">
+<title id="t">Research concept</title><desc id="d">Plant physiology connects four research areas: high-yield physiology, controlled environment, postharvest, and non-destructive sensing.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1b2d"/><stop offset="1" stop-color="#11283f"/></linearGradient>
+  <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9bd8ae"/><stop offset="1" stop-color="#55a079"/></linearGradient>
+  <linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff839c"/><stop offset="1" stop-color="#ce2f53"/></linearGradient>
+  <style>
+    .card{fill:#172a3e;stroke:#30465c;stroke-width:2}.title{fill:#f6f8fb;font:700 27px Arial,sans-serif}.sub{fill:#9fb0c1;font:500 16px Arial,sans-serif}.line{stroke:#ff8099;stroke-width:3;stroke-dasharray:8 8;fill:none;stroke-linecap:round}.icon{stroke:#87d6f4;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}.pink{stroke:#ff8099}.green{stroke:#8fd0a3}.small{fill:#ff8da5;font:800 15px Arial,sans-serif;letter-spacing:.08em}
+  </style>
+</defs>
+<rect width="1200" height="900" rx="30" fill="url(#bg)"/>
+<g opacity=".06" stroke="#c6d4df"><path d="M0 150H1200M0 300H1200M0 450H1200M0 600H1200M0 750H1200"/><path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900"/></g>
+
+<!-- connectors behind cards -->
+<path class="line" d="M350 250 C430 285 465 320 505 365"/><path class="line" d="M850 250 C770 285 735 320 695 365"/><path class="line" d="M350 650 C430 615 465 580 505 535"/><path class="line" d="M850 650 C770 615 735 580 695 535"/>
+
+<!-- center -->
+<circle cx="600" cy="450" r="150" fill="#152a3e" stroke="#31485f" stroke-width="2"/>
+<circle cx="600" cy="450" r="108" fill="#102238" stroke="#283f55" stroke-width="2"/>
+<text x="600" y="388" text-anchor="middle" class="small">CORE</text>
+<text x="600" y="425" text-anchor="middle" class="title" font-size="34">Plant physiology</text>
+<text x="600" y="455" text-anchor="middle" class="sub">canopy · light · dry matter</text>
+<text x="600" y="480" text-anchor="middle" class="sub">roots · nitrogen · photosynthesis</text>
+<g transform="translate(600 535)"><path d="M0 0V-54" stroke="#d9c8b7" stroke-width="5" stroke-linecap="round"/><path d="M0-52c-25-30-61-29-82-4c23 22 52 27 82 15Z" fill="url(#leaf)"/><path d="M0-52c28-30 67-27 86 2c-25 21-56 24-86 9Z" fill="url(#leaf)"/><path d="M-20-8c0-16 13-29 29-29s29 13 29 29c0 23-29 48-29 48s-29-25-29-48Z" fill="url(#berry)"/></g>
+
+<!-- TL -->
+<rect x="75" y="105" width="330" height="230" rx="26" class="card"/>
+<text x="105" y="140" class="small">01</text><text x="105" y="178" class="title">High-yield physiology</text><text x="105" y="204" class="sub">light interception → dry matter → yield</text>
+<g transform="translate(120 235)"><path d="M0 55h215M20 48V28h34v20M78 48V8h34v40M136 48V-12h34v60" fill="none" stroke="#ff8099" stroke-width="5"/><path d="M16 10c48-6 92-25 145-67" fill="none" stroke="#ff8099" stroke-width="5" stroke-linecap="round"/><path d="M150-58h18v18" fill="none" stroke="#ff8099" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+
+<!-- TR -->
+<rect x="795" y="105" width="330" height="230" rx="26" class="card"/>
+<text x="825" y="140" class="small">02</text><text x="825" y="178" class="title">Controlled environment</text><text x="825" y="204" class="sub">CO₂ · light · temperature</text>
+<g transform="translate(875 230)"><path d="M0 90V24L84-22l84 46v66M0 24h168M42 90V45h84v45" class="icon"/><circle cx="190" cy="17" r="16" fill="#ffd06b"/><path d="M190-7v-13M190 41v13M166 17h-13M214 17h13" stroke="#ffd06b" stroke-width="4" stroke-linecap="round"/><text x="182" y="84" fill="#84d8ff" font-family="Arial" font-size="24" font-weight="700">CO₂</text></g>
+
+<!-- BL -->
+<rect x="75" y="565" width="330" height="230" rx="26" class="card"/>
+<text x="105" y="600" class="small">03</text><text x="105" y="638" class="title">Postharvest</text><text x="105" y="664" class="sub">freshness · storage · sterilization</text>
+<g transform="translate(120 700)"><rect x="0" y="0" width="210" height="70" rx="18" fill="#102238" stroke="#3a5268" stroke-width="3"/><circle cx="45" cy="35" r="18" fill="url(#berry)"/><circle cx="95" cy="35" r="18" fill="url(#berry)"/><circle cx="145" cy="35" r="18" fill="url(#berry)"/><path d="M178 14v42M165 26h26M165 44h26" class="icon pink"/></g>
+
+<!-- BR -->
+<rect x="795" y="565" width="330" height="230" rx="26" class="card"/>
+<text x="825" y="600" class="small">04</text><text x="825" y="638" class="title">Non-destructive sensing</text><text x="825" y="664" class="sub">hyperspectral · 3D · prediction</text>
+<g transform="translate(860 695)"><rect x="0" y="0" width="120" height="80" rx="18" class="icon"/><circle cx="38" cy="34" r="15" class="icon pink"/><path d="M70 25h28M70 40h20M70 55h32" class="icon"/><path d="M150 64c16-26 42-38 72-30c-7 30-27 49-60 54" class="icon green"/><path d="M170 14c13-10 30-10 43 0M180 2c7-5 16-5 23 0" class="icon"/></g>
+</svg>
