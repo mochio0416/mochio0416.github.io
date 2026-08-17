@@ -137,3 +137,165 @@
 :focus-visible{outline:3px solid #ff6681;outline-offset:4px;border-radius:6px}.button:focus-visible,.visual-link:focus-visible,.research-card:focus-visible,.news-card:focus-visible,.pub-item:focus-visible,.collab-card a:focus-visible{outline-offset:5px}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important}}
 @media print{.site-header,.hero-gridlines,.hero-orb,.scroll-cue,.hero-actions,.button,.lang-button,.menu-button,.nav,.site-footer .footer-links{display:none!important}body{background:#fff!important;color:#000!important}.section-dark,.hero,.detail-hero{background:#fff!important;color:#000!important}.hero h1,.hero h1 span,.detail-hero h1{color:#000!important}.container{max-width:none!important;width:100%!important}.section{padding:28px 0!important}a{color:#000!important;text-decoration:none!important}.reveal{opacity:1!important;transform:none!important}.research-card,.news-card,.pub-item,.evidence-card,.collab-card{break-inside:avoid;box-shadow:none!important}}
+
+
+/* v10.2 — desktop/laptop hero fine tuning
+   Keeps the original visual language while fitting the opening view more comfortably
+   on common notebook-height browser windows. */
+@media (min-width:1001px) and (max-height:920px){
+  .hero{
+    min-height:780px;
+    padding:128px 0 58px;
+  }
+  .hero-grid{
+    gap:62px;
+  }
+  .hero h1{
+    font-size:clamp(3.5rem,5.35vw,5.72rem);
+    line-height:.975;
+  }
+  .kicker{
+    margin-bottom:20px;
+  }
+  .lead{
+    max-width:730px;
+    margin-top:25px;
+    font-size:1.03rem;
+    line-height:1.78;
+  }
+  .hero-actions{
+    margin-top:28px;
+  }
+  .hero-proof{
+    margin-top:30px;
+  }
+  .hero-meta{
+    margin-top:20px;
+  }
+  .hero-visual{
+    min-height:500px;
+    transform:translateY(-2px);
+  }
+  .ring-1{
+    width:430px;
+    height:430px;
+  }
+  .ring-2{
+    width:340px;
+    height:340px;
+  }
+  .visual-main{
+    inset:58px 25px 58px 20px;
+    padding:26px;
+    border-radius:31px;
+  }
+  .berry-graphic{
+    width:165px;
+    height:165px;
+    margin:20px auto 10px;
+  }
+  .visual-main h2{
+    font-size:1.65rem;
+  }
+  .visual-main p{
+    font-size:.78rem;
+  }
+  .visual-mini{
+    width:164px;
+    min-height:100px;
+    padding:16px;
+  }
+  .scroll-cue{
+    bottom:14px;
+  }
+}
+
+
+/* v10.4 — research concept imagery */
+.theme-visual-figure{
+  margin:0;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.theme-visual-image{
+  width:100%;
+  max-height:610px;
+  object-fit:contain;
+  display:block;
+  border-radius:28px;
+  border:1px solid rgba(140,169,201,.18);
+  box-shadow:0 28px 70px rgba(0,0,0,.28);
+  background:rgba(5,17,31,.42);
+}
+.theme-visual-caption{
+  max-width:620px;
+  margin:0 auto;
+  color:rgba(184,202,222,.68);
+  font-size:.72rem;
+  line-height:1.65;
+  text-align:center;
+}
+.detail-visual{
+  align-items:center;
+  justify-content:center;
+}
+
+/* v10.4 — complete publication record */
+.publication-counts{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+  margin:18px 0 8px;
+}
+.publication-counts>div{
+  padding:14px 16px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:rgba(255,255,255,.018);
+  display:flex;
+  align-items:baseline;
+  gap:9px;
+}
+.publication-counts strong{
+  color:#fff;
+  font-size:1.35rem;
+}
+.publication-counts span{
+  color:var(--muted);
+  font-size:.76rem;
+}
+.complete-pub-list .pub-item{
+  grid-template-columns:72px 1fr 34px;
+}
+.complete-pub-list .pub-item h3{
+  max-width:950px;
+}
+.complete-pub-list .pub-item p strong{
+  color:#d9e5f3;
+  font-weight:600;
+}
+.publication-audit-note{
+  margin:18px 0 0;
+  padding:13px 15px;
+  border-left:2px solid rgba(255,76,112,.7);
+  background:rgba(255,255,255,.018);
+  color:var(--muted);
+  font-size:.78rem;
+  line-height:1.7;
+}
+@media(max-width:760px){
+  .publication-counts{grid-template-columns:1fr}
+  .complete-pub-list .pub-item{grid-template-columns:54px 1fr 24px}
+  .theme-visual-image{border-radius:20px}
+}
+
+
+/* v10.5 — social links */
+.social-note{
+  margin: 16px 0 8px;
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.65;
+}
