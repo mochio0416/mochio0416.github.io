@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Research concept visual</title>
+  <desc id="desc">A clear concept diagram showing plant physiology at the center and four connected research areas: controlled environment, non-destructive sensing, root system and nitrogen, and postharvest.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c1a2a"/>
+      <stop offset="100%" stop-color="#10253e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="92%" r="36%">
+      <stop offset="0%" stop-color="rgba(216,46,82,.38)"/>
+      <stop offset="100%" stop-color="rgba(216,46,82,0)"/>
+    </radialGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="56%">
+      <stop offset="0%" stop-color="rgba(126,220,255,.16)"/>
+      <stop offset="100%" stop-color="rgba(126,220,255,0)"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,.10)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,.05)"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#95d7aa"/>
+      <stop offset="100%" stop-color="#4c9970"/>
+    </linearGradient>
+    <linearGradient id="berry" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff91ab"/>
+      <stop offset="100%" stop-color="#d62e52"/>
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#06111d" flood-opacity="0.45"/>
+    </filter>
+    <style>
+      .grid{stroke:rgba(255,255,255,.06);stroke-width:1}
+      .panel{fill:url(#panel);stroke:rgba(255,255,255,.10);stroke-width:2}
+      .panelTitle{fill:#f3f7fc;font:700 48px Inter,Arial,sans-serif}
+      .panelSub{fill:#aab8c8;font:500 24px Inter,Arial,sans-serif}
+      .mini{fill:#91a1b3;font:600 22px Inter,Arial,sans-serif}
+      .centerTitle{fill:#f7fbff;font:800 56px Inter,Arial,sans-serif}
+      .centerText{fill:#b9c7d6;font:500 26px Inter,Arial,sans-serif}
+      .accent{stroke:#ff7e99;stroke-width:5;stroke-dasharray:12 10;fill:none;stroke-linecap:round}
+      .label{fill:#ff8fa5;font:800 20px Inter,Arial,sans-serif;letter-spacing:.12em}
+      .smallPanel{fill:rgba(255,255,255,.04);stroke:rgba(255,255,255,.08);stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1600" height="1080" rx="40" fill="url(#bg)"/>
+  <rect width="1600" height="1080" rx="40" fill="url(#glow)"/>
+  <g opacity="0.9">
+    <path class="grid" d="M120 0V1080"/><path class="grid" d="M260 0V1080"/><path class="grid" d="M400 0V1080"/><path class="grid" d="M540 0V1080"/><path class="grid" d="M680 0V1080"/><path class="grid" d="M820 0V1080"/><path class="grid" d="M960 0V1080"/><path class="grid" d="M1100 0V1080"/><path class="grid" d="M1240 0V1080"/><path class="grid" d="M1380 0V1080"/>
+    <path class="grid" d="M0 170H1600"/><path class="grid" d="M0 360H1600"/><path class="grid" d="M0 550H1600"/><path class="grid" d="M0 740H1600"/><path class="grid" d="M0 930H1600"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="95" y="170" width="420" height="220" rx="30" class="panel"/>
+    <rect x="1085" y="170" width="420" height="220" rx="30" class="panel"/>
+    <rect x="95" y="730" width="470" height="220" rx="30" class="panel"/>
+    <rect x="1035" y="730" width="470" height="220" rx="30" class="panel"/>
+  </g>
+
+  <path class="accent" d="M515 280C630 310 662 352 730 430"/>
+  <path class="accent" d="M1085 280C980 315 940 348 872 430"/>
+  <path class="accent" d="M500 780C630 742 670 705 736 624"/>
+  <path class="accent" d="M1045 780C948 740 915 705 870 624"/>
+
+  <g>
+    <circle cx="800" cy="535" r="170" fill="url(#centerGlow)" stroke="rgba(255,255,255,.10)" stroke-width="2"/>
+    <circle cx="800" cy="535" r="112" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.08)" stroke-width="2"/>
+    <text x="800" y="480" text-anchor="middle" class="centerTitle">Plant physiology</text>
+    <text x="800" y="524" text-anchor="middle" class="centerText">canopy architecture · light interception</text>
+    <text x="800" y="560" text-anchor="middle" class="centerText">dry matter production · root function · nitrogen use</text>
+    <g transform="translate(800 612)">
+      <path d="M0 0V-92" stroke="#d9c8b7" stroke-width="7" stroke-linecap="round"/>
+      <path d="M0 -92C-22 -136 -3 -176 48 -182C94 -188 126 -151 110 -106C73 -89 36 -85 0 -92Z" fill="url(#leaf)"/>
+      <path d="M0 -92C24 -140 78 -151 118 -120C155 -92 153 -42 117 -19C76 -25 30 -49 0 -92Z" fill="url(#leaf)" opacity="0.96"/>
+      <path d="M0 -92C-13 -141 -60 -156 -99 -131C-136 -108 -139 -59 -106 -28C-68 -34 -26 -54 0 -92Z" fill="url(#leaf)" opacity="0.96"/>
+      <g transform="translate(-44 -18)">
+        <path d="M0 18c0-23 19-42 42-42s42 19 42 42c0 36-42 72-42 72S0 54 0 18Z" fill="url(#berry)"/>
+        <path d="M42 -22l-7 15M42 -22l12 10M42 -22l15 -1M42 -22l-15 1M42 -22l-12 10" stroke="#73bf8a" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(26 8) scale(.82)">
+        <path d="M0 18c0-23 19-42 42-42s42 19 42 42c0 36-42 72-42 72S0 54 0 18Z" fill="url(#berry)"/>
+        <path d="M42 -22l-7 15M42 -22l12 10M42 -22l15 -1M42 -22l-15 1M42 -22l-12 10" stroke="#73bf8a" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <path d="M0 4c-18 24-30 45-40 82M0 7c18 22 30 44 40 80M-4 18c-25 11-45 29-51 54M5 18c23 10 39 25 48 48" stroke="#e8d7c6" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(95 170)">
+    <text x="36" y="56" class="panelTitle">Controlled environment</text>
+    <text x="36" y="92" class="panelSub">CO₂ enrichment · light · temperature</text>
+    <g transform="translate(44 118)">
+      <path d="M22 58V12l95-46 95 46v46" fill="none" stroke="#b8c7d6" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M54 58V28l63-30 63 30v30" fill="none" stroke="#8fa2b6" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="0" cy="22" r="12" fill="#ffcc70"/>
+      <path d="M0 0V-18M0 44V62M-22 22h-18M22 22h18M-14 8l-12-12M14 8l12-12" stroke="#ffcc70" stroke-width="4" stroke-linecap="round"/>
+      <text x="250" y="22" class="label">CO₂</text>
+      <path d="M244 34c12 0 22 7 22 17s-10 17-22 17" fill="none" stroke="#7fdcff" stroke-width="4"/>
+      <path d="M274 34c12 0 22 7 22 17s-10 17-22 17" fill="none" stroke="#7fdcff" stroke-width="4"/>
+      <path d="M304 34c12 0 22 7 22 17s-10 17-22 17" fill="none" stroke="#7fdcff" stroke-width="4"/>
+    </g>
+  </g>
+
+  <g transform="translate(1085 170)">
+    <text x="36" y="56" class="panelTitle">Non-destructive sensing</text>
+    <text x="36" y="92" class="panelSub">hyperspectral imaging · 3D sensing</text>
+    <g transform="translate(34 118)">
+      <rect x="0" y="0" width="122" height="92" rx="18" class="smallPanel"/>
+      <rect x="28" y="24" width="66" height="44" rx="11" fill="rgba(125,220,255,.08)" stroke="#7fdcff" stroke-width="4"/>
+      <circle cx="40" cy="36" r="10" fill="none" stroke="#ff6f91" stroke-width="4"/>
+      <rect x="48" y="48" width="38" height="8" rx="4" fill="#7fdcff"/>
+      <g transform="translate(164 -4)">
+        <rect x="0" y="0" width="148" height="112" rx="20" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.08)" stroke-width="2"/>
+        <rect x="44" y="10" width="62" height="26" rx="8" fill="#0a1724" stroke="#2a4258" stroke-width="2"/>
+        <path d="M40 42l70 0" stroke="#66788d" stroke-width="3"/>
+        <path d="M52 42v48" stroke="rgba(255,255,255,.12)" stroke-width="2"/>
+        <path d="M62 42v48" stroke="rgba(255,255,255,.08)" stroke-width="1.5"/>
+        <path d="M52 42h58" stroke="rgba(255,255,255,.10)" stroke-width="2"/>
+        <path d="M58 42v48" stroke="#b06cff" stroke-width="7"/><path d="M68 42v48" stroke="#6ac8ff" stroke-width="7"/><path d="M78 42v48" stroke="#70e0a0" stroke-width="7"/><path d="M88 42v48" stroke="#ffd166" stroke-width="7"/><path d="M98 42v48" stroke="#ff8ca1" stroke-width="7"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(95 730)">
+    <text x="36" y="56" class="panelTitle">Root system &amp; nitrogen</text>
+    <text x="36" y="92" class="panelSub">uptake capacity · use efficiency</text>
+    <g transform="translate(54 116)">
+      <path d="M116 72V0" stroke="#dcc8b6" stroke-width="6" stroke-linecap="round"/>
+      <path d="M116 72c-18 24-29 46-38 80M116 74c16 23 26 45 34 80M110 86c-26 12-48 28-55 56M122 86c25 12 41 28 49 53" stroke="#ead7c5" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="250" cy="34" r="20" fill="rgba(125,220,255,.12)" stroke="#7fdcff" stroke-width="4"/>
+      <text x="250" y="41" text-anchor="middle" fill="#9fe5ff" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">N</text>
+      <circle cx="296" cy="64" r="20" fill="rgba(125,220,255,.12)" stroke="#7fdcff" stroke-width="4"/>
+      <text x="296" y="71" text-anchor="middle" fill="#9fe5ff" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">NO₃</text>
+      <circle cx="340" cy="22" r="20" fill="rgba(125,220,255,.12)" stroke="#7fdcff" stroke-width="4"/>
+      <text x="340" y="29" text-anchor="middle" fill="#9fe5ff" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">NH₄</text>
+    </g>
+  </g>
+
+  <g transform="translate(1035 730)">
+    <text x="36" y="56" class="panelTitle">Postharvest</text>
+    <text x="36" y="92" class="panelSub">quality preservation · storage</text>
+    <g transform="translate(40 128)">
+      <rect x="0" y="10" width="160" height="60" rx="18" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.10)" stroke-width="2"/>
+      <g transform="translate(18 0) scale(.62)">
+        <path d="M0 18c0-23 19-42 42-42s42 19 42 42c0 36-42 72-42 72S0 54 0 18Z" fill="url(#berry)"/>
+        <path d="M42 -22l-7 15M42 -22l12 10M42 -22l15 -1M42 -22l-15 1M42 -22l-12 10" stroke="#73bf8a" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(76 0) scale(.62)">
+        <path d="M0 18c0-23 19-42 42-42s42 19 42 42c0 36-42 72-42 72S0 54 0 18Z" fill="url(#berry)"/>
+        <path d="M42 -22l-7 15M42 -22l12 10M42 -22l15 -1M42 -22l-15 1M42 -22l-12 10" stroke="#73bf8a" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(134 0) scale(.62)">
+        <path d="M0 18c0-23 19-42 42-42s42 19 42 42c0 36-42 72-42 72S0 54 0 18Z" fill="url(#berry)"/>
+        <path d="M42 -22l-7 15M42 -22l12 10M42 -22l15 -1M42 -22l-15 1M42 -22l-12 10" stroke="#73bf8a" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <text x="204" y="25" class="label">O₃ / UV</text>
+      <rect x="220" y="44" width="74" height="10" rx="5" fill="#ff6f91"/>
+      <rect x="304" y="44" width="54" height="10" rx="5" fill="#8da0b5"/>
+      <rect x="220" y="68" width="20" height="20" rx="5" fill="#6ac8ff"/>
+      <rect x="248" y="68" width="20" height="20" rx="5" fill="#95d7aa"/>
+      <rect x="276" y="68" width="20" height="20" rx="5" fill="#ffd166"/>
+      <rect x="304" y="68" width="20" height="20" rx="5" fill="#ff8ca1"/>
+      <rect x="332" y="68" width="20" height="20" rx="5" fill="#93a3b6"/>
+    </g>
+  </g>
+</svg>

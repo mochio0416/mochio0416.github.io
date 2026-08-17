@@ -1487,3 +1487,122 @@
     padding:12px;
   }
 }
+
+
+/* v10.19 — concept clarity + about balance */
+#concept .section-title-row{
+  align-items:flex-start;
+  gap:56px;
+}
+#concept .section-intro{
+  max-width:610px;
+  line-height:1.8;
+}
+#concept .concept-layout{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:28px;
+  align-items:stretch;
+}
+#concept .concept-media,
+#concept .concept-copy{
+  min-height:620px;
+}
+#concept .concept-media{
+  padding:18px;
+}
+#concept .concept-badge{
+  top:22px;
+  left:22px;
+}
+#concept .concept-image{
+  min-height:485px;
+  object-fit:contain;
+  background:linear-gradient(180deg,#0d1b2b,#11263f);
+}
+#concept .concept-caption{
+  font-size:.76rem;
+  padding:16px 10px 4px;
+}
+#concept .concept-copy{
+  padding:40px 40px 34px;
+}
+#concept .concept-copy h3{
+  font-size:clamp(1.7rem,2.25vw,2.55rem);
+  line-height:1.2;
+  letter-spacing:-.04em;
+  margin-bottom:20px;
+}
+#concept .concept-copy > p:not(.concept-kicker):not(.concept-replace-note){
+  font-size:.98rem;
+  line-height:1.9;
+}
+#concept .concept-point{
+  grid-template-columns:48px 1fr;
+  padding:17px 0;
+}
+#concept .concept-point strong{
+  font-size:.98rem;
+  line-height:1.55;
+}
+
+#about .two-column{
+  grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);
+  gap:72px;
+}
+#about .section-heading h2{
+  font-size:clamp(2.7rem,4.2vw,4.15rem);
+  line-height:1.04;
+  max-width:6ch;
+}
+#about .about-identity{
+  max-width:400px;
+  margin-top:26px;
+  padding:16px 18px;
+  border-radius:20px;
+}
+#about .about-identity-kicker{
+  margin-bottom:10px;
+}
+#about .about-identity-row{
+  grid-template-columns:34px 1fr;
+  gap:10px;
+  padding:11px 0;
+}
+#about .about-identity-icon{
+  width:32px;
+  height:32px;
+  border-radius:10px;
+}
+#about .about-identity-icon svg{
+  width:19px;
+  height:19px;
+}
+#about .about-identity-row strong{
+  font-size:.82rem;
+}
+#about .about-identity-row div > span{
+  font-size:.66rem;
+}
+#about .about-lead{
+  font-size:1.14rem;
+  line-height:1.75;
+}
+#about .profile-strip{
+  margin-top:30px;
+}
+#about .about-principle{
+  margin-top:26px;
+}
+
+@media(max-width:1000px){
+  #concept .concept-layout,
+  #about .two-column{grid-template-columns:1fr;}
+  #concept .concept-media,
+  #concept .concept-copy{min-height:auto;}
+  #concept .concept-copy{padding:32px;}
+}
+@media(max-width:640px){
+  #concept .concept-copy h3{font-size:1.72rem;}
+  #concept .concept-image{min-height:0;aspect-ratio:4/3;}
+  #about .section-heading h2{font-size:2.45rem;max-width:none;}
+}
