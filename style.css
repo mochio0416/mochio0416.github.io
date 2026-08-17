@@ -832,3 +832,48 @@
     padding:12px;
   }
 }
+
+
+/* v10.10 cleanup */
+
+#concept .section-title-row{align-items:flex-start;gap:56px;margin-bottom:28px}
+#concept .section-title-row h2{font-size:clamp(2.4rem,3.4vw,3.8rem);line-height:1.04;letter-spacing:-.045em;max-width:none}
+#concept .section-intro{max-width:520px;line-height:1.8}
+.concept-layout{grid-template-columns:1.02fr .98fr;gap:28px;align-items:start}
+.concept-media{min-height:0;padding:18px}
+.concept-image{min-height:0;height:auto;aspect-ratio:4/3;object-fit:contain;object-position:center;background:#0f2133}
+.concept-copy{padding:34px 36px}
+.concept-copy h3{font-size:clamp(1.8rem,2.35vw,2.7rem);line-height:1.18;letter-spacing:-.04em;max-width:none}
+.concept-copy>p:not(.concept-kicker):not(.concept-replace-note){font-size:.98rem;line-height:1.9}
+.concept-caption{font-size:.78rem;line-height:1.7}
+
+.publication-counts{gap:14px;margin:20px 0 10px}
+.publication-counts>div{background:#f7f9fc;border:1px solid #dde4ec;border-radius:16px;align-items:center;gap:14px;padding:18px 20px}
+.publication-counts strong{display:inline-grid;place-items:center;min-width:48px;height:48px;border-radius:14px;background:#10243a;color:#fff;font-size:1.3rem;font-weight:800;line-height:1}
+.publication-counts span{color:#5f7285;font-size:1rem;font-weight:600}
+
+.pub-spotlight-grid{gap:20px}
+.pub-spotlight{min-height:620px}
+.pub-art{height:208px;background:#f3f6f9}
+.pub-art svg{width:100%;height:100%;display:block}
+.pub-summary{font-size:.87rem;line-height:1.78}
+.pub-spotlight h3{font-size:1.08rem;line-height:1.45}
+
+.featured-section .section-title-row h2{max-width:none}
+.flow-step{min-height:214px}
+.flow-graphic{height:92px}
+.flow-step p{font-size:.88rem}
+
+.detail-hero-grid{grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.detail-hero h1{font-size:clamp(2.6rem,4.8vw,4.8rem);line-height:1.06;letter-spacing:-.05em;max-width:8.5ch}
+.detail-lead{max-width:680px}
+.detail-visual{min-height:430px}
+.project-hero-card{min-height:0;max-width:520px;padding:14px}
+.project-hero-svg{width:100%;height:auto;display:block}
+
+@media (max-width: 1000px){
+  #concept .section-title-row{display:grid;gap:18px}
+  .concept-layout{grid-template-columns:1fr}
+  .detail-hero-grid{grid-template-columns:1fr;gap:26px}
+  .detail-hero h1{max-width:none;font-size:clamp(2.3rem,9vw,4.1rem)}
+}
