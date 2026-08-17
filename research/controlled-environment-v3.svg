@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0A1A2B"/><stop offset="100%" stop-color="#132B40"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A3DCB2"/><stop offset="100%" stop-color="#5FA179"/></linearGradient>
+<linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF8098"/><stop offset="100%" stop-color="#D53159"/></linearGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1200" height="900" rx="36" fill="url(#bg)"/>
+<g opacity="0.08" stroke="#8FA6BC"><path d="M0 180H1200"/><path d="M0 360H1200"/><path d="M0 540H1200"/><path d="M0 720H1200"/><path d="M240 0V900"/><path d="M480 0V900"/><path d="M720 0V900"/><path d="M960 0V900"/></g>
+<text x="70" y="82" fill="#F3F7FB" font-size="38" font-weight="700">Controlled environment</text>
+<text x="70" y="122" fill="#9DB0C2" font-size="20">Manipulating CO₂, light and temperature to improve crop productivity</text>
+
+<rect x="84" y="190" width="1032" height="520" rx="32" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.10)"/>
+<path d="M282 640V274L600 170l318 104v366" stroke="#AFC3D6" stroke-width="5" stroke-linejoin="round"/>
+<path d="M360 640V337L600 256l240 81v303" stroke="#9BB0C5" stroke-width="3" opacity=".82"/>
+<g transform="translate(480 500)"><rect x="0" y="40" width="240" height="30" rx="12" fill="#8C6854"/><path d="M120 40V-40" stroke="#88BA98" stroke-width="8" stroke-linecap="round"/><path d="M75 -18c-47-41-28-100 39-106c59-5 99 45 69 97c-34 10-70 15-108 9Z" fill="url(#leaf)"/><path d="M136 -28c44-43 99-22 105 29c5 48-39 83-95 67c-13-29-16-59-10-96Z" fill="url(#leaf)"/><g transform="translate(96 4) scale(.7)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g></g>
+<circle cx="154" cy="280" r="34" fill="#FFD067"/><path d="M154 234v-18M154 326v18M108 280H90M218 280h18M122 248l-12-12M186 312l12 12M186 248l12-12M122 312l-12 12" stroke="#FFD067" stroke-width="4" stroke-linecap="round"/>
+<text x="110" y="372" fill="#F4F8FC" font-size="26" font-weight="700">Light</text>
+<text x="88" y="400" fill="#9EB2C7" font-size="18">radiation control</text>
+<path d="M188 300C312 356 402 418 500 492" stroke="#F27F98" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<circle cx="1048" cy="280" r="36" fill="#163049" stroke="rgba(255,255,255,.12)"/><text x="1017" y="289" fill="#8FD8FF" font-size="28" font-weight="700">CO₂</text>
+<text x="986" y="372" fill="#F4F8FC" font-size="26" font-weight="700">CO₂ enrichment</text>
+<text x="992" y="400" fill="#9EB2C7" font-size="18">carbon acquisition</text>
+<path d="M1018 304C906 366 822 422 704 494" stroke="#76CFE8" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<circle cx="154" cy="606" r="36" fill="#163049" stroke="rgba(255,255,255,.12)"/><path d="M154 584v28" stroke="#FF8DA7" stroke-width="6" stroke-linecap="round"/><circle cx="154" cy="628" r="7" fill="#FF8DA7"/><path d="M154 582c16 0 28 12 28 28c0 16-10 28-28 28c-17 0-28-12-28-28c0-16 12-28 28-28Z" stroke="#FF8DA7" stroke-width="4"/>
+<text x="94" y="697" fill="#F4F8FC" font-size="26" font-weight="700">Temperature</text>
+<text x="100" y="725" fill="#9EB2C7" font-size="18">growth response</text>
+<path d="M190 596C336 584 416 560 522 526" stroke="#FF8DA7" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<rect x="902" y="548" width="194" height="118" rx="26" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<text x="1000" y="592" text-anchor="middle" fill="#F4F8FC" font-size="26" font-weight="700">Dry matter &amp; yield</text>
+<rect x="940" y="616" width="118" height="10" rx="5" fill="rgba(255,255,255,.12)"/><rect x="940" y="616" width="78" height="10" rx="5" fill="#FF7F97"/>
+<path d="M940 642h24M974 628h24M1008 612h24" stroke="#8FD38A" stroke-width="12" stroke-linecap="round"/>
+</svg>
