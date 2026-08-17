@@ -1668,34 +1668,10 @@ body[data-page="controlled-environment"] .detail-theme-hero h1{
 }
 
 
-/* v10.26 — hero visual redesign with multi-crop hub */
-.hero-visual{min-height:600px}
-.visual-hub{position:absolute;inset:88px 52px 88px 52px;padding:26px 28px 24px;border-radius:38px;display:flex;flex-direction:column;justify-content:flex-start}
-.crop-cluster-graphic{width:100%;max-width:430px;height:auto;margin:26px auto 20px;filter:drop-shadow(0 22px 34px rgba(0,0,0,.26))}
-.crop-cluster-graphic svg{display:block;width:100%;height:auto}
-.visual-hub h2{font-size:1.68rem;line-height:1.16;letter-spacing:-.04em;text-align:center;margin:0 0 10px}
-.visual-hub p{color:#9eacbd;margin:0 auto;max-width:320px;font-size:.82rem;line-height:1.55;text-align:center}
-.visual-mini{width:180px;min-height:116px;padding:18px 18px 16px;z-index:2}
-.visual-mini strong{font-size:.88rem;line-height:1.24}
-.visual-mini em{font-style:normal;color:#92a4b6;font-size:.73rem;margin-top:8px}
-.mini-hy{top:12px;left:0;transform:rotate(-4deg)}
-.mini-ce{top:0;right:6px;transform:rotate(4deg)}
-.mini-ph{left:2px;bottom:18px;transform:rotate(-2deg)}
-.mini-sn{right:0;bottom:10px;transform:rotate(3deg)}
-@media (max-width:1000px){
-  .hero-visual{min-height:560px}
-  .visual-hub{inset:82px 26px 108px}
-  .visual-mini{width:160px;min-height:102px;padding:16px}
-  .crop-cluster-graphic{max-width:360px}
-}
-@media (max-width:700px){
-  .hero-visual{min-height:640px}
-  .visual-hub{inset:74px 14px 170px}
-  .visual-hub h2{font-size:1.42rem}
-  .visual-mini{width:145px;min-height:95px;padding:14px}
-  .visual-mini strong{font-size:.8rem}
-  .mini-hy{top:0;left:2px}
-  .mini-ce{top:0;right:2px}
-  .mini-ph{left:8px;bottom:40px}
-  .mini-sn{right:8px;bottom:40px}
+/* v10.27 hero image refresh */
+.hero-visual{display:flex;align-items:center;justify-content:center;min-height:560px;}
+.hero-poster{position:relative;z-index:1;width:min(100%,620px);margin:0;border-radius:34px;overflow:hidden;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);box-shadow:0 32px 90px rgba(0,0,0,.28);}
+.hero-poster img{display:block;width:100%;height:auto;}
+@media (max-width: 980px){
+  .hero-poster{width:min(100%,560px);}
 }
