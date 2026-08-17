@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#081829"/><stop offset="100%" stop-color="#10283d"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#9ADFB0"/><stop offset="100%" stop-color="#56A77C"/></linearGradient>
+<linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF7F97"/><stop offset="100%" stop-color="#D62E52"/></linearGradient>
+</defs>
+<rect width="1200" height="900" rx="36" fill="url(#bg)"/>
+<g opacity="0.09" stroke="#91A8BF"><path d="M0 180H1200"/><path d="M0 360H1200"/><path d="M0 540H1200"/><path d="M0 720H1200"/><path d="M240 0V900"/><path d="M480 0V900"/><path d="M720 0V900"/><path d="M960 0V900"/></g>
+<text x="70" y="86" fill="#F5F8FC" font-size="38" font-weight="700">Non-destructive sensing</text>
+<text x="70" y="126" fill="#9BB0C5" font-size="21">果実を壊さず、内部品質や受光状態を推定する</text>
+<rect x="236" y="120" width="728" height="640" rx="34" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.11)"/>
+<rect x="420" y="164" width="360" height="110" rx="26" fill="#15253b" stroke="rgba(136,175,216,.30)" stroke-width="3"/>
+<rect x="450" y="140" width="300" height="48" rx="18" fill="#21344c"/>
+<text x="600" y="229" text-anchor="middle" fill="#d0dff0" font-size="30" font-weight="700">Hyperspectral scanner</text>
+<path d="M454 277h292" stroke="#253a56" stroke-width="10" stroke-linecap="round"/>
+<g opacity="0.85"><path d="M484 277 438 512" stroke="#A678FF" stroke-width="7" stroke-linecap="round"/><path d="M526 277 494 512" stroke="#7CC8FF" stroke-width="7" stroke-linecap="round"/><path d="M568 277 550 512" stroke="#6AE08C" stroke-width="7" stroke-linecap="round"/><path d="M610 277 606 512" stroke="#F4E06B" stroke-width="7" stroke-linecap="round"/><path d="M652 277 662 512" stroke="#FFB05E" stroke-width="7" stroke-linecap="round"/><path d="M694 277 718 512" stroke="#FF7F97" stroke-width="7" stroke-linecap="round"/></g>
+<g transform="translate(404 482)"><path d="M194 0v86" stroke="#88BA98" stroke-width="8" stroke-linecap="round"/><path d="M138 24c-49-43-30-104 41-110c63-5 104 48 72 101c-36 10-73 16-113 9Z" fill="url(#leaf)"/><path d="M204 14c48-47 106-24 112 30c5 53-42 91-102 74c-14-32-17-66-10-104Z" fill="url(#leaf)"/><path d="M88 94c-42-35-25-84 30-94c54-10 88 28 72 75c-31 10-60 15-102 19Z" fill="url(#leaf)" opacity=".86"/><path d="M244 104c44-34 87-12 91 30c4 42-31 70-79 61c-10-24-13-52-12-91Z" fill="url(#leaf)" opacity=".86"/><g transform="translate(150 88) scale(1.08)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/><circle cx="23" cy="33" r="3.8" fill="#FFD8A1"/><circle cx="48" cy="38" r="3.8" fill="#FFD8A1"/><circle cx="30" cy="52" r="3.8" fill="#FFD8A1"/><circle cx="57" cy="57" r="3.8" fill="#FFD8A1"/></g></g>
+<rect x="274" y="486" width="110" height="118" rx="24" fill="rgba(123,224,255,.08)" stroke="#7FDBFF" stroke-width="2"/>
+<text x="329" y="522" text-anchor="middle" fill="#F5F8FC" font-size="22" font-weight="700">3D</text><path d="M308 550l22-14 22 14v28l-22 14-22-14Z" stroke="#7FDBFF" stroke-width="3"/><path d="M330 536v28" stroke="#7FDBFF" stroke-width="3"/>
+<rect x="816" y="470" width="118" height="148" rx="24" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.1)"/>
+<path d="M836 570c16-16 30-24 44-24c15 0 27 8 39 6c13-2 20-16 34-18" stroke="#7FDBFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M836 520h28" stroke="#FF8FB1" stroke-width="10" stroke-linecap="round"/><path d="M874 520h28" stroke="#8FD38A" stroke-width="10" stroke-linecap="round"/><path d="M912 520h12" stroke="#FFBF6B" stroke-width="10" stroke-linecap="round"/>
+<text x="875" y="446" text-anchor="middle" fill="#F5F8FC" font-size="26" font-weight="700">Prediction</text>
+<text x="875" y="642" text-anchor="middle" fill="#9BB0C5" font-size="18">spectrum → quality</text>
+</svg>

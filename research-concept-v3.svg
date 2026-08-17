@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" fill="none">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#081829"/><stop offset="100%" stop-color="#10283d"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#9ADFB0"/><stop offset="100%" stop-color="#56A77C"/></linearGradient>
+<linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF7F97"/><stop offset="100%" stop-color="#D62E52"/></linearGradient>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#03111f" flood-opacity="0.38"/></filter>
+</defs>
+<rect width="1200" height="820" rx="32" fill="url(#bg)"/>
+<g opacity="0.10" stroke="#91A8BF" stroke-width="1">
+<path d="M0 120H1200"/><path d="M0 240H1200"/><path d="M0 360H1200"/><path d="M0 480H1200"/><path d="M0 600H1200"/>
+<path d="M120 0V820"/><path d="M240 0V820"/><path d="M360 0V820"/><path d="M480 0V820"/><path d="M600 0V820"/><path d="M720 0V820"/><path d="M840 0V820"/><path d="M960 0V820"/><path d="M1080 0V820"/>
+</g>
+<g filter="url(#shadow)">
+<rect x="440" y="214" width="320" height="290" rx="34" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.09)"/>
+<rect x="72" y="108" width="250" height="122" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)"/>
+<rect x="876" y="110" width="252" height="124" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)"/>
+<rect x="878" y="538" width="250" height="124" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)"/>
+<rect x="470" y="624" width="260" height="118" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)"/>
+
+<text x="188" y="150" text-anchor="middle" fill="#F4F8FC" font-size="28" font-weight="700">Controlled environment</text>
+<text x="188" y="185" text-anchor="middle" fill="#9BB0C5" font-size="18">施設園芸・環境制御</text>
+<path d="M118 201V148L188 114l70 34v53" stroke="#AFC3D6" stroke-width="4" stroke-linejoin="round"/>
+<path d="M152 202V169l36-18 36 18v33" stroke="#AFC3D6" stroke-width="3" stroke-linejoin="round"/>
+
+<text x="1002" y="150" text-anchor="middle" fill="#F4F8FC" font-size="28" font-weight="700">Sensing</text>
+<text x="1002" y="185" text-anchor="middle" fill="#9BB0C5" font-size="18">非破壊計測・画像解析</text>
+<rect x="910" y="150" width="86" height="56" rx="14" fill="rgba(123,224,255,.08)" stroke="#7FDBFF" stroke-width="2"/>
+<circle cx="939" cy="177" r="12" stroke="#FF6C8C" stroke-width="4"/><path d="M963 193c10-10 18-10 27 0" stroke="#7FDBFF" stroke-width="3" stroke-linecap="round"/>
+<path d="M1018 168h22" stroke="#7FDBFF" stroke-width="10" stroke-linecap="round"/><path d="M1046 158h22" stroke="#A494FF" stroke-width="16" stroke-linecap="round"/><path d="M1072 173h22" stroke="#FFB277" stroke-width="10" stroke-linecap="round"/>
+
+<text x="1004" y="580" text-anchor="middle" fill="#F4F8FC" font-size="28" font-weight="700">Postharvest</text>
+<text x="1004" y="615" text-anchor="middle" fill="#9BB0C5" font-size="18">品質保持・貯蔵</text>
+<path d="M922 592h56" stroke="#FF7893" stroke-width="10" stroke-linecap="round"/><path d="M990 592h56" stroke="#76A8D7" stroke-width="10" stroke-linecap="round"/><path d="M1058 592h34" stroke="#8FD38A" stroke-width="10" stroke-linecap="round"/>
+<rect x="926" y="620" width="164" height="22" rx="11" fill="rgba(255,255,255,.10)"/><circle cx="952" cy="631" r="10" fill="#D62E52"/><circle cx="979" cy="631" r="10" fill="#FF7B97"/><circle cx="1006" cy="631" r="10" fill="#D62E52"/><circle cx="1052" cy="631" r="10" fill="#6C8CCB"/><circle cx="1079" cy="631" r="10" fill="#88B2E9"/>
+
+<text x="600" y="662" text-anchor="middle" fill="#F4F8FC" font-size="28" font-weight="700">Root system &amp; nitrogen</text>
+<text x="600" y="697" text-anchor="middle" fill="#9BB0C5" font-size="18">根系量・吸収能・利用効率</text>
+
+<text x="600" y="95" text-anchor="middle" fill="#F4F8FC" font-size="28" font-weight="700">Canopy architecture</text>
+<text x="600" y="128" text-anchor="middle" fill="#9BB0C5" font-size="18">積算受光量 → 乾物生産</text>
+</g>
+
+<g transform="translate(0 0)" filter="url(#shadow)">
+<rect x="534" y="384" width="132" height="42" rx="14" fill="#85624D"/>
+<rect x="520" y="362" width="160" height="34" rx="14" fill="#9A735C"/>
+<path d="M600 362V258" stroke="#88BA98" stroke-width="8" stroke-linecap="round"/>
+<path d="M548 286c-49-43-30-104 41-110c63-5 104 48 72 101c-36 10-73 16-113 9Z" fill="url(#leaf)"/>
+<path d="M614 276c48-47 106-24 112 30c5 53-42 91-102 74c-14-32-17-66-10-104Z" fill="url(#leaf)"/>
+<path d="M568 236c-46-39-26-95 34-107c58-12 96 33 78 87c-33 11-67 17-112 20Z" fill="url(#leaf)"/>
+<path d="M646 244c48-38 96-12 102 33c5 47-36 81-91 70c-12-26-16-60-11-103Z" fill="url(#leaf)"/>
+<path d="M546 362c-12 24-20 53-28 88M578 362c-8 28-12 58-12 94M610 362c3 30 5 61 5 94M640 362c9 27 18 57 26 90" stroke="#E8D2BF" stroke-width="5" stroke-linecap="round"/>
+<path d="M554 452c-16 10-27 24-34 42M592 458c-2 15-5 28-11 39M625 456c8 13 15 24 20 39" stroke="#E8D2BF" stroke-width="3" stroke-linecap="round"/>
+<g transform="translate(534 314) scale(.72)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/><circle cx="23" cy="33" r="3.8" fill="#FFD8A1"/><circle cx="48" cy="38" r="3.8" fill="#FFD8A1"/><circle cx="30" cy="52" r="3.8" fill="#FFD8A1"/><circle cx="57" cy="57" r="3.8" fill="#FFD8A1"/></g>
+<g transform="translate(609 323) scale(.62)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g>
+</g>
+
+<g stroke="#F16F8A" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="9 11">
+<path d="M322 170C416 218 472 254 531 293"/>
+<path d="M879 170C791 214 735 250 672 289"/>
+<path d="M878 565C803 532 743 498 677 442"/>
+<path d="M598 624C598 574 598 520 598 470"/>
+<path d="M620 140C620 191 620 233 620 258"/>
+</g>
+</svg>

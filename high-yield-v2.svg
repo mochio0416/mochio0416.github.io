@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#081829"/><stop offset="100%" stop-color="#10283d"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#9ADFB0"/><stop offset="100%" stop-color="#56A77C"/></linearGradient>
+<linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF7F97"/><stop offset="100%" stop-color="#D62E52"/></linearGradient>
+</defs>
+<rect width="1200" height="900" rx="36" fill="url(#bg)"/>
+<g opacity="0.09" stroke="#91A8BF"><path d="M0 180H1200"/><path d="M0 360H1200"/><path d="M0 540H1200"/><path d="M0 720H1200"/><path d="M240 0V900"/><path d="M480 0V900"/><path d="M720 0V900"/><path d="M960 0V900"/></g>
+<text x="70" y="86" fill="#F5F8FC" font-size="38" font-weight="700">High-yield strawberry physiology</text>
+<text x="70" y="126" fill="#9BB0C5" font-size="21">受光・乾物生産・根・収量をつなぐ多収性の理解</text>
+<g>
+  <rect x="56" y="180" width="240" height="520" rx="30" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.11)"/>
+  <rect x="338" y="180" width="240" height="520" rx="30" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.11)"/>
+  <rect x="620" y="180" width="240" height="520" rx="30" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.11)"/>
+  <rect x="902" y="180" width="240" height="520" rx="30" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.11)"/>
+  <path d="M308 442H334" stroke="#89A4BE" stroke-width="4" stroke-linecap="round"/><path d="M324 432l14 10-14 10" stroke="#89A4BE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M590 442H616" stroke="#89A4BE" stroke-width="4" stroke-linecap="round"/><path d="M606 432l14 10-14 10" stroke="#89A4BE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M872 442H898" stroke="#89A4BE" stroke-width="4" stroke-linecap="round"/><path d="M888 432l14 10-14 10" stroke="#89A4BE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="86" y="228" fill="#ff8aa0" font-size="18" font-weight="800">01</text>
+  <text x="86" y="262" fill="#F5F8FC" font-size="32" font-weight="700">Canopy</text>
+  <text x="86" y="292" fill="#A6BACF" font-size="20">plant architecture</text>
+  <path d="M92 438c56-36 112-36 168 0" stroke="#6D8399" stroke-width="6" stroke-linecap="round"/>
+  <g fill="url(#leaf)"><path d="M128 332c20-36 65-36 88-6c-22 29-60 33-88 6Z"/><path d="M186 306c24-41 76-41 101-6c-22 36-70 43-101 6Z"/><path d="M216 336c21-34 61-34 84-5c-18 28-56 33-84 5Z"/></g>
+  <path d="M152 434v-54M208 434v-78M254 434v-55" stroke="#7DA48E" stroke-width="7" stroke-linecap="round"/>
+  <path d="M118 360H278" stroke="#F0C36C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M128 350l8-10M178 350l8-10M228 350l8-10" stroke="#F0C36C" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="368" y="228" fill="#ff8aa0" font-size="18" font-weight="800">02</text>
+  <text x="368" y="262" fill="#F5F8FC" font-size="32" font-weight="700">Light interception</text>
+  <text x="368" y="292" fill="#A6BACF" font-size="20">積算受光量</text>
+  <circle cx="410" cy="340" r="26" fill="#FFD067"/>
+  <path d="M410 300v-18M410 398v18M370 340h-18M468 340h18M381 311l-12-12M439 369l12 12M439 311l12-12M381 369l-12 12" stroke="#FFD067" stroke-width="4" stroke-linecap="round"/>
+  <g fill="url(#leaf)"><path d="M432 438c18-30 58-30 77-4c-16 26-50 29-77 4Z"/><path d="M490 410c21-35 66-35 88-5c-18 30-61 35-88 5Z"/><path d="M540 435c18-29 53-29 72-4c-15 24-46 27-72 4Z"/></g>
+  <path d="M462 506v-52M520 506v-72M566 506v-51" stroke="#7DA48E" stroke-width="7" stroke-linecap="round"/>
+  <path d="M514 362l-36 38M548 362l-32 34" stroke="#FCE4AB" stroke-width="5" stroke-linecap="round"/>
+  <path d="M532 385h38M548 405h34" stroke="#76CFE8" stroke-width="6" stroke-linecap="round"/>
+
+  <text x="650" y="228" fill="#ff8aa0" font-size="18" font-weight="800">03</text>
+  <text x="650" y="262" fill="#F5F8FC" font-size="32" font-weight="700">Dry matter</text>
+  <text x="650" y="292" fill="#A6BACF" font-size="20">conversion to biomass</text>
+  <g fill="url(#leaf)"><path d="M682 414c21-32 65-32 86-4c-18 28-59 32-86 4Z"/><path d="M742 396c22-36 69-36 92-5c-18 31-64 36-92 5Z"/><path d="M792 418c18-29 55-29 74-4c-14 24-48 28-74 4Z"/></g>
+  <path d="M704 494v-52M760 494v-78M810 494v-54" stroke="#7DA48E" stroke-width="7" stroke-linecap="round"/>
+  <rect x="778" y="374" width="52" height="90" rx="18" fill="rgba(255,255,255,.06)"/>
+  <path d="M795 443v-24M815 443v-46" stroke="#FF7F97" stroke-width="8" stroke-linecap="round"/>
+  <path d="M775 536h80" stroke="#8FA5BB" stroke-width="3" stroke-linecap="round"/>
+  <path d="M687 542c46 18 89 18 143 0" stroke="#8FD38A" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="932" y="228" fill="#ff8aa0" font-size="18" font-weight="800">04</text>
+  <text x="932" y="262" fill="#F5F8FC" font-size="32" font-weight="700">Fruit yield</text>
+  <text x="932" y="292" fill="#A6BACF" font-size="20">season-long production</text>
+  <g transform="translate(972 332) scale(1.16)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/><circle cx="23" cy="33" r="3.8" fill="#FFD8A1"/><circle cx="48" cy="38" r="3.8" fill="#FFD8A1"/><circle cx="30" cy="52" r="3.8" fill="#FFD8A1"/><circle cx="57" cy="57" r="3.8" fill="#FFD8A1"/></g>
+  <g transform="translate(1064 350) scale(.92)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g>
+  <path d="M948 552h166" stroke="#8FA5BB" stroke-width="3" stroke-linecap="round"/>
+  <rect x="954" y="500" width="22" height="52" rx="7" fill="#F57B93"/><rect x="990" y="476" width="22" height="76" rx="7" fill="#FF98AA"/><rect x="1026" y="454" width="22" height="98" rx="7" fill="#F57B93"/><rect x="1062" y="430" width="22" height="122" rx="7" fill="#FF98AA"/>
+</g>
+</svg>

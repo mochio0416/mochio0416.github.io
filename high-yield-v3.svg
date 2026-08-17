@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0A1A2B"/><stop offset="100%" stop-color="#132B40"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A3DCB2"/><stop offset="100%" stop-color="#5FA179"/></linearGradient>
+<linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF8098"/><stop offset="100%" stop-color="#D53159"/></linearGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1200" height="900" rx="36" fill="url(#bg)"/>
+<g opacity="0.08" stroke="#8FA6BC"><path d="M0 180H1200"/><path d="M0 360H1200"/><path d="M0 540H1200"/><path d="M0 720H1200"/><path d="M240 0V900"/><path d="M480 0V900"/><path d="M720 0V900"/><path d="M960 0V900"/></g>
+<text x="70" y="82" fill="#F3F7FB" font-size="38" font-weight="700">High-yield strawberry physiology</text>
+<text x="70" y="122" fill="#9DB0C2" font-size="20">Canopy structure, light interception, dry matter production and yield</text>
+
+<rect x="82" y="190" width="1036" height="520" rx="32" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.10)"/>
+<rect x="122" y="235" width="270" height="430" rx="28" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.08)"/>
+<rect x="465" y="235" width="270" height="430" rx="28" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.08)"/>
+<rect x="808" y="235" width="270" height="430" rx="28" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.08)"/>
+<text x="152" y="280" fill="#F4F8FC" font-size="29" font-weight="700">Canopy</text>
+<text x="152" y="310" fill="#9EB2C7" font-size="18">architecture</text>
+<path d="M168 480c62-44 121-44 183 0" stroke="#7287A0" stroke-width="5" stroke-linecap="round"/>
+<g fill="url(#leaf)"><path d="M186 378c24-35 73-35 96-4c-22 31-65 36-96 4Z"/><path d="M238 350c25-40 80-40 106-4c-23 35-74 42-106 4Z"/><path d="M285 380c22-33 64-33 88-4c-19 28-58 33-88 4Z"/></g>
+<path d="M208 480v-58M266 480v-86M321 480v-58" stroke="#7BA48C" stroke-width="7" stroke-linecap="round"/>
+<path d="M170 400H356" stroke="#F0C36C" stroke-width="6" stroke-linecap="round"/>
+<path d="M182 388l10-12M234 388l10-12M286 388l10-12" stroke="#F0C36C" stroke-width="4" stroke-linecap="round"/>
+<text x="495" y="280" fill="#F4F8FC" font-size="29" font-weight="700">Light interception</text>
+<text x="495" y="310" fill="#9EB2C7" font-size="18">accumulated light</text>
+<circle cx="548" cy="365" r="26" fill="#FFD067"/><path d="M548 322v-18M548 408v18M505 365h-18M591 365h18M518 335l-13-13M578 395l13 13M578 335l13-13M518 395l-13 13" stroke="#FFD067" stroke-width="4" stroke-linecap="round"/>
+<g fill="url(#leaf)"><path d="M542 477c23-30 67-30 90-4c-19 25-64 31-90 4Z"/><path d="M590 446c24-34 74-34 99-4c-20 30-68 36-99 4Z"/></g>
+<path d="M570 535v-50M635 535v-70" stroke="#7BA48C" stroke-width="7" stroke-linecap="round"/>
+<path d="M604 387l-28 30M639 387l-26 28" stroke="#F7E7B9" stroke-width="5" stroke-linecap="round"/>
+<path d="M620 414h38M636 436h34" stroke="#76CFE8" stroke-width="6" stroke-linecap="round"/>
+<text x="838" y="280" fill="#F4F8FC" font-size="29" font-weight="700">Dry matter → yield</text>
+<text x="838" y="310" fill="#9EB2C7" font-size="18">biomass conversion</text>
+<g fill="url(#leaf)"><path d="M866 415c22-31 68-31 90-4c-20 27-62 31-90 4Z"/><path d="M922 390c25-37 76-37 102-4c-20 31-70 37-102 4Z"/></g>
+<path d="M894 494v-56M951 494v-84" stroke="#7BA48C" stroke-width="7" stroke-linecap="round"/>
+<g transform="translate(880 500) scale(.6)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g>
+<g transform="translate(948 470) scale(.72)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g>
+<path d="M836 560h180" stroke="#8FA5BB" stroke-width="3" stroke-linecap="round"/>
+<rect x="840" y="512" width="24" height="48" rx="7" fill="#F57B93"/><rect x="878" y="488" width="24" height="72" rx="7" fill="#FF98AA"/><rect x="916" y="462" width="24" height="98" rx="7" fill="#F57B93"/><rect x="954" y="432" width="24" height="128" rx="7" fill="#FF98AA"/>
+<path d="M392 450h56" stroke="#889FB7" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/><path d="M435 440l16 10-16 10" stroke="#889FB7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M735 450h56" stroke="#889FB7" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/><path d="M778 440l16 10-16 10" stroke="#889FB7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

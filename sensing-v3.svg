@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0A1A2B"/><stop offset="100%" stop-color="#132B40"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A3DCB2"/><stop offset="100%" stop-color="#5FA179"/></linearGradient>
+<linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF8098"/><stop offset="100%" stop-color="#D53159"/></linearGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1200" height="900" rx="36" fill="url(#bg)"/>
+<g opacity="0.08" stroke="#8FA6BC"><path d="M0 180H1200"/><path d="M0 360H1200"/><path d="M0 540H1200"/><path d="M0 720H1200"/><path d="M240 0V900"/><path d="M480 0V900"/><path d="M720 0V900"/><path d="M960 0V900"/></g>
+<text x="70" y="82" fill="#F3F7FB" font-size="38" font-weight="700">Non-destructive sensing</text>
+<text x="70" y="122" fill="#9DB0C2" font-size="20">Estimating fruit quality and crop status without destructive sampling</text>
+
+<rect x="84" y="190" width="1032" height="520" rx="32" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.10)"/>
+<rect x="420" y="220" width="360" height="90" rx="24" fill="#162A3D" stroke="rgba(255,255,255,.12)"/>
+<text x="600" y="276" text-anchor="middle" fill="#DFEAF4" font-size="28" font-weight="700">Hyperspectral scanner</text>
+<path d="M456 310 436 430" stroke="#A678FF" stroke-width="6" stroke-linecap="round"/><path d="M506 310 500 430" stroke="#7CC8FF" stroke-width="6" stroke-linecap="round"/><path d="M556 310 564 430" stroke="#6AE08C" stroke-width="6" stroke-linecap="round"/><path d="M606 310 628 430" stroke="#F4E06B" stroke-width="6" stroke-linecap="round"/><path d="M656 310 692 430" stroke="#FFB05E" stroke-width="6" stroke-linecap="round"/><path d="M706 310 756 430" stroke="#FF7F97" stroke-width="6" stroke-linecap="round"/>
+<g transform="translate(462 450)"><path d="M138 40V-36" stroke="#88BA98" stroke-width="8" stroke-linecap="round"/><path d="M86 -14c-47-41-28-100 39-106c59-5 99 45 69 97c-34 10-70 15-108 9Z" fill="url(#leaf)"/><path d="M150 -26c44-43 99-22 105 29c5 48-39 83-95 67c-13-29-16-59-10-96Z" fill="url(#leaf)"/><path d="M40 52c-40-33-23-78 28-88c50-10 82 27 67 71c-28 9-56 14-95 17Z" fill="url(#leaf)" opacity=".88"/><path d="M222 54c42-31 82-11 86 27c4 39-29 64-73 56c-10-20-12-45-13-83Z" fill="url(#leaf)" opacity=".88"/>
+<g transform="translate(98 60) scale(.92)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g></g>
+<rect x="182" y="468" width="168" height="128" rx="26" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.09)"/>
+<text x="266" y="510" text-anchor="middle" fill="#F4F8FC" font-size="24" font-weight="700">3D sensing</text>
+<path d="M228 548l38-22 38 22v42l-38 22-38-22Z" stroke="#7FDBFF" stroke-width="3"/>
+<path d="M266 526v42" stroke="#7FDBFF" stroke-width="3"/><path d="M228 548l38 20 38-20" stroke="#7FDBFF" stroke-width="3"/>
+<rect x="860" y="468" width="170" height="128" rx="26" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.09)"/>
+<text x="945" y="510" text-anchor="middle" fill="#F4F8FC" font-size="24" font-weight="700">Prediction</text>
+<path d="M898 552c16-14 30-20 45-20c15 0 26 8 40 7c14-1 22-13 36-16" stroke="#7FDBFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M896 522h20" stroke="#FF8FB1" stroke-width="8" stroke-linecap="round"/><path d="M924 522h20" stroke="#8FD38A" stroke-width="8" stroke-linecap="round"/><path d="M952 522h20" stroke="#FFBF6B" stroke-width="8" stroke-linecap="round"/>
+<path d="M350 530h68" stroke="#889FB7" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round"/><path d="M405 520l16 10-16 10" stroke="#889FB7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M780 530h60" stroke="#889FB7" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round"/><path d="M825 520l16 10-16 10" stroke="#889FB7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
