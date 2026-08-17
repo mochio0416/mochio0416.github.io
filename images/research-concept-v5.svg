@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980" fill="none"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0A1A2B"/><stop offset="100%" stop-color="#132B40"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#A3DCB2"/><stop offset="100%" stop-color="#5FA179"/></linearGradient>
+<linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF8098"/><stop offset="100%" stop-color="#D53159"/></linearGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1400" height="980" rx="34" fill="url(#bg)"/>
+<g opacity="0.08" stroke="#8FA6BC"><path d="M0 163H1400"/><path d="M0 326H1400"/><path d="M0 489H1400"/><path d="M0 652H1400"/><path d="M0 815H1400"/><path d="M200 0V980"/><path d="M400 0V980"/><path d="M600 0V980"/><path d="M800 0V980"/><path d="M1000 0V980"/><path d="M1200 0V980"/></g>
+<text x="78" y="84" fill="#F4F8FC" font-size="34" font-weight="700">Research concept</text>
+<text x="78" y="122" fill="#9EB2C7" font-size="20">From physiology to production technology, postharvest and sensing</text>
+<circle cx="700" cy="500" r="170" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.12)"/>
+<circle cx="700" cy="500" r="114" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.08)"/>
+<text x="700" y="462" text-anchor="middle" fill="#F4F8FC" font-size="34" font-weight="700">Plant physiology</text>
+<text x="700" y="500" text-anchor="middle" fill="#9EB2C7" font-size="20">canopy · light interception</text>
+<text x="700" y="532" text-anchor="middle" fill="#9EB2C7" font-size="20">dry matter · roots · nitrogen</text>
+<g transform="translate(638 570)"><rect x="0" y="0" width="124" height="20" rx="10" fill="#8A654F"/><path d="M62 0V-52" stroke="#88BA98" stroke-width="6" stroke-linecap="round"/><path d="M28 -36c-27-22-16-54 22-58c34-4 57 24 40 53c-21 7-40 9-62 5Z" fill="url(#leaf)"/><path d="M66 -42c28-26 59-12 62 18c3 29-24 48-56 39c-8-17-10-35-6-57Z" fill="url(#leaf)"/><g transform="translate(34 -8) scale(.38)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g><g transform="translate(64 4) scale(.28)"><path d="M0 28c0-22 18-40 40-40c23 0 40 18 40 40c0 31-40 66-40 66S0 59 0 28Z" fill="url(#berry)"/><path d="M38 -8l-6 16M38 -8l12 10M38 -8l16 -1M38 -8l-15 1M38 -8l-13 10" stroke="#6EC08A" stroke-width="7" stroke-linecap="round"/></g></g>
+
+<rect x="96" y="224" width="288" height="150" rx="26" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<text x="240" y="280" text-anchor="middle" fill="#F4F8FC" font-size="28" font-weight="700">Controlled environment</text>
+<text x="240" y="314" text-anchor="middle" fill="#9EB2C7" font-size="17">CO₂ enrichment · light · temperature</text>
+<path d="M166 344V286l74-32 74 32v58" stroke="#B1C5D9" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="142" cy="260" r="12" fill="#FFD067"/><path d="M318 258h26M318 278h20" stroke="#7FDBFF" stroke-width="4" stroke-linecap="round"/>
+
+<rect x="1016" y="224" width="288" height="150" rx="26" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<text x="1160" y="280" text-anchor="middle" fill="#F4F8FC" font-size="28" font-weight="700">Non-destructive sensing</text>
+<text x="1160" y="314" text-anchor="middle" fill="#9EB2C7" font-size="17">hyperspectral imaging · 3D sensing</text>
+<rect x="1070" y="292" width="88" height="52" rx="14" fill="rgba(123,224,255,.08)" stroke="#7FDBFF" stroke-width="2"/>
+<path d="M1086 320h18" stroke="#FF8FB1" stroke-width="6" stroke-linecap="round"/><path d="M1110 320h18" stroke="#8FD38A" stroke-width="6" stroke-linecap="round"/><path d="M1134 320h10" stroke="#FFBF6B" stroke-width="6" stroke-linecap="round"/>
+<path d="M1180 300l-8 44M1204 300l8 44" stroke="#7FDBFF" stroke-width="3" stroke-linecap="round"/>
+
+<rect x="120" y="712" width="312" height="150" rx="26" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<text x="276" y="768" text-anchor="middle" fill="#F4F8FC" font-size="28" font-weight="700">Root system &amp; nitrogen</text>
+<text x="276" y="802" text-anchor="middle" fill="#9EB2C7" font-size="17">uptake capacity · use efficiency</text>
+<path d="M274 790V744" stroke="#88BA98" stroke-width="5" stroke-linecap="round"/>
+<path d="M274 790c-10 20-20 32-22 54M274 790c8 16 18 28 20 50M274 802c-18 10-28 18-34 34M274 804c16 8 26 18 30 32" stroke="#E8D2BF" stroke-width="4" stroke-linecap="round"/>
+
+<rect x="962" y="712" width="318" height="150" rx="26" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<text x="1121" y="768" text-anchor="middle" fill="#F4F8FC" font-size="28" font-weight="700">Postharvest</text>
+<text x="1121" y="802" text-anchor="middle" fill="#9EB2C7" font-size="17">freshness preservation · storage</text>
+<rect x="1036" y="786" width="54" height="8" rx="4" fill="#FF7893"/><rect x="1150" y="786" width="54" height="8" rx="4" fill="#76A8D7"/>
+<rect x="1038" y="808" width="166" height="16" rx="8" fill="rgba(255,255,255,.10)"/><circle cx="1062" cy="816" r="7" fill="#D53159"/><circle cx="1086" cy="816" r="7" fill="#FF8098"/><circle cx="1110" cy="816" r="7" fill="#D53159"/><circle cx="1162" cy="816" r="7" fill="#75A8D7"/><circle cx="1186" cy="816" r="7" fill="#93B4E9"/>
+
+<path d="M402 310C522 346 566 382 616 430" stroke="#F27F98" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<path d="M998 310C874 346 828 382 782 430" stroke="#F27F98" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<path d="M412 712C530 676 578 634 636 590" stroke="#F27F98" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+<path d="M960 712C848 676 812 642 764 594" stroke="#F27F98" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+</svg>

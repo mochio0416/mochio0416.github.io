@@ -1257,3 +1257,39 @@
     gap:14px;
   }
 }
+
+
+/* v10.13 refinement: calmer illustrations + smaller social icons */
+.detail-theme-hero .theme-visual-figure{max-width:620px}
+.detail-theme-hero .theme-visual-image{aspect-ratio:4 / 3; object-fit:contain; border-radius:24px; box-shadow:none;}
+
+#concept .section-title-row{grid-template-columns:minmax(0,.88fr) minmax(320px,.72fr); gap:34px; align-items:end}
+.concept-layout{grid-template-columns:minmax(0,1fr) minmax(380px,.92fr); gap:24px}
+.concept-media{padding:16px 16px 18px}
+.concept-image{background:#0d1e30; aspect-ratio:1.43 / 1; border-radius:20px}
+.concept-copy{padding:30px 32px}
+.concept-copy h3{font-size:clamp(1.72rem,2.2vw,2.5rem); line-height:1.18}
+.concept-copy p{font-size:.98rem; line-height:1.82}
+.concept-point strong{font-size:1.02rem}
+
+.pub-spotlight{min-height:575px}
+.pub-art{height:190px; border-radius:18px; margin-bottom:18px}
+.pub-spotlight h3{font-size:1rem; line-height:1.38}
+.pub-summary{font-size:.84rem}
+
+.contact-panel::before{width:200px; height:200px; right:-70px; top:-58px; opacity:.8}
+.profile-links{gap:8px; margin-top:20px}
+.profile-pill{min-height:38px; padding:7px 11px 7px 8px; font-size:.72rem}
+.profile-pill-icon{width:23px; height:23px}
+.profile-pill-icon svg{width:14px; height:14px}
+.contact-subhead{margin:22px 0 10px; font-size:.61rem}
+.social-icon-row{grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px}
+.social-icon-link{min-height:50px; padding:8px 10px; border-radius:14px; gap:8px}
+.social-icon{width:30px; height:30px; border-radius:10px}
+.social-icon svg{width:17px; height:17px}
+.social-icon-meta strong{font-size:.72rem}
+.social-icon-meta small{font-size:.61rem}
+
+@media(max-width:900px){
+  .social-icon-row{grid-template-columns:1fr}
+}
