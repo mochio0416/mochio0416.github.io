@@ -636,3 +636,199 @@
 .pub-art-canopy-v2{
   background:linear-gradient(180deg,#eef5f1,#fafcfa);
 }
+
+
+/* v10.8 — concept layout and typography refinement */
+.concept-layout{
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.concept-media{
+  min-height: 0;
+  padding: 18px;
+}
+.concept-image{
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center center;
+  background: #102031;
+  padding: 6px;
+}
+.concept-copy{
+  min-height: 100%;
+  padding: 42px 44px;
+}
+.concept-copy h3{
+  font-size: clamp(2rem, 2.45vw, 3.1rem);
+  line-height: 1.22;
+  letter-spacing: -0.035em;
+  max-width: 10.5ch;
+  word-break: keep-all;
+  line-break: strict;
+}
+.concept-copy > p:not(.concept-kicker):not(.concept-replace-note){
+  font-size: 1rem;
+  line-height: 1.95;
+}
+.concept-point strong{
+  font-size: .95rem;
+}
+.concept-replace-note{
+  font-size: .74rem;
+}
+#concept .section-title-row h2,
+#research .section-title-row h2,
+#journey .section-title-row h2,
+#current .section-title-row h2{
+  word-break: keep-all;
+  line-break: strict;
+}
+#concept .section-title-row h2{
+  line-height: 1.16;
+}
+#concept p, #research p, #publications p{
+  word-break: auto-phrase;
+  line-break: strict;
+}
+
+/* v10.8 — publication spotlight refresh */
+.pub-art{
+  height: 210px;
+}
+.pub-art-root-v2{
+  background: linear-gradient(180deg,#101f30,#0b1520);
+}
+.pub-art-spectrum-v3{
+  background: linear-gradient(135deg,#102133,#18364d);
+}
+.pub-art-canopy-v3{
+  background: linear-gradient(180deg,#edf5ef,#fafcfa);
+}
+.pub-summary{
+  line-height: 1.78;
+}
+.pub-spotlight h3{
+  line-height: 1.42;
+}
+.pub-citation{
+  margin-top: auto;
+}
+
+/* better flow cards */
+.featured-flow{
+  gap: 10px;
+}
+.flow-step{
+  min-height: 214px;
+  padding: 20px;
+}
+.flow-graphic{
+  height: 88px;
+}
+.flow-step strong{
+  font-size: 1.02rem;
+}
+.flow-step p{
+  font-size: .83rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px){
+  .concept-layout{
+    grid-template-columns: 1fr;
+  }
+  .concept-copy h3{
+    max-width: none;
+  }
+}
+@media (max-width: 640px){
+  .concept-copy{
+    padding: 28px;
+  }
+  .concept-copy h3{
+    font-size: 1.9rem;
+  }
+  .concept-copy > p:not(.concept-kicker):not(.concept-replace-note){
+    font-size: .96rem;
+    line-height: 1.85;
+  }
+}
+
+
+/* v10.9 — clearer research/publication/project visuals */
+.featured-section .section-title-row h2{
+  line-height:1.16;
+  max-width: 12ch;
+}
+.flow-graphic{
+  height: 92px;
+  background: rgba(255,255,255,.03);
+}
+.flow-graphic svg{
+  width:100%;
+  height:100%;
+  display:block;
+}
+.flow-step{
+  min-height: 224px;
+}
+.flow-step strong{
+  font-size:1rem;
+}
+.flow-step p{
+  font-size:.82rem;
+  line-height:1.45;
+}
+.pub-art{
+  height: 210px;
+}
+.pub-art svg{
+  width:100%;
+  height:100%;
+  display:block;
+}
+.pub-spotlight h3{
+  font-size:1.1rem;
+}
+.pub-summary{
+  font-size:.83rem;
+  line-height:1.8;
+}
+.project-hero-card{
+  width:100%;
+  min-height:430px;
+  border-radius:30px;
+  background: rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.10);
+  box-shadow: 0 24px 56px rgba(0,0,0,.20);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+}
+.project-hero-svg{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.detail-hero h1,
+.detail-thesis h2,
+.detail-story h2{
+  word-break: keep-all;
+  line-break: strict;
+}
+@media (max-width:1000px){
+  .featured-section .section-title-row h2{
+    max-width:none;
+  }
+  .flow-step{
+    min-height:0;
+  }
+  .project-hero-card{
+    min-height:0;
+    padding:12px;
+  }
+}
