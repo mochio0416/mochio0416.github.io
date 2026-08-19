@@ -1,0 +1,6 @@
+v10.59 updates
+- About: real strawberry greenhouse photo used as a softly faded background.
+- About: transparent full-body portrait layered separately so the person is not cropped.
+- About: background positioned to retain the university building on the right.
+- Top hero: “研究の４つの柱 / FOUR RESEARCH PILLARS” slightly enlarged and bolded.
+- All v10.57 typography/project/publication fixes retained.

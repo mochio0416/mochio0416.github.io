@@ -1,0 +1,18 @@
+v10.49 CLEAN GitHub release
+
+Base:
+- v10.48 Preview
+
+Latest updates:
+- About background changed to a soft strawberry-greenhouse visual.
+- Profile cards reordered: Affiliation → Position → Degree.
+- Profile cards made more compact with stronger typography.
+- Research Principle enlarged/darkened and key sentence emphasized.
+- Research Concept and the three publication Graphic Abstracts retained.
+- Obsolete/unused image assets removed from this package.
+- .nojekyll retained.
+
+Recommended:
+1. Do not upload repeatedly.
+2. Upload this release once.
+3. Wait for the single GitHub Pages workflow to finish before making another commit.
