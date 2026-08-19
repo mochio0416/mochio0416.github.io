@@ -94,3 +94,30 @@ document.addEventListener('click', (event) => {
     menuButton?.setAttribute('aria-expanded', 'false');
   }
 });
+
+
+// v10.66: compact full publication record on mobile.
+const pubMobileToggle = document.querySelector('.pub-mobile-toggle');
+const completePubList = document.querySelector('.complete-pub-list');
+function setMobilePublicationExpanded(expanded) {
+  if (!pubMobileToggle || !completePubList) return;
+  completePubList.classList.toggle('mobile-expanded', expanded);
+  pubMobileToggle.setAttribute('aria-expanded', String(expanded));
+  const isJa = document.documentElement.lang !== 'en';
+  pubMobileToggle.textContent = expanded
+    ? (isJa ? '業績リストを閉じる' : 'Collapse publication list')
+    : (isJa ? '全18件の業績を見る' : 'Show all 18 publications');
+}
+pubMobileToggle?.addEventListener('click', () => {
+  setMobilePublicationExpanded(!completePubList?.classList.contains('mobile-expanded'));
+});
+pubFilters.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (window.innerWidth <= 760 && button.dataset.filter !== 'all') {
+      setMobilePublicationExpanded(true);
+    }
+  });
+});
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 760) setMobilePublicationExpanded(false);
+});

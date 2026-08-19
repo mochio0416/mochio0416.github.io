@@ -4903,3 +4903,75 @@ body[data-page="controlled-environment"] .detail-theme-hero h1{
     background:rgba(255,255,255,.035);
   }
 }
+
+
+/* =========================================================
+   v10.66 — mobile visibility fix + compact publication record
+   ========================================================= */
+.pub-mobile-toggle{display:none;}
+
+@media (max-width:760px){
+  /* iOS / in-app WebView: never leave scroll-reveal elements transparent. */
+  .reveal,
+  .reveal.visible{
+    opacity:1 !important;
+    transform:none !important;
+    transition:none !important;
+  }
+
+  /* Publications: avoid an excessively long mobile page. */
+  #publications{padding-bottom:64px !important;}
+  #publications .pub-browser{overflow:visible !important;}
+  #publications .pub-browser-head{padding:18px 15px 15px !important;gap:12px !important;}
+  #publications .pub-browser-head h3{font-size:1.05rem !important;line-height:1.35 !important;}
+  #publications .pub-browser-kicker{font-size:.52rem !important;line-height:1.35 !important;}
+  #publications .publication-counts{grid-template-columns:repeat(3,1fr) !important;gap:6px !important;margin:10px 12px 6px !important;}
+  #publications .publication-counts>div{padding:9px 5px !important;border-radius:11px !important;gap:5px !important;display:flex !important;flex-direction:column !important;align-items:center !important;text-align:center !important;}
+  #publications .publication-counts strong{min-width:0 !important;width:32px !important;height:32px !important;border-radius:9px !important;font-size:.9rem !important;}
+  #publications .publication-counts span{font-size:.55rem !important;line-height:1.2 !important;}
+
+  #publications .complete-pub-list .pub-item{
+    padding:15px 14px !important;
+    grid-template-columns:44px 1fr 18px !important;
+    gap:9px !important;
+  }
+  #publications .complete-pub-list .pub-item h3{font-size:.84rem !important;line-height:1.42 !important;margin-bottom:5px !important;}
+  #publications .complete-pub-list .pub-item p{font-size:.68rem !important;line-height:1.5 !important;}
+  #publications .complete-pub-list .pub-year{font-size:.61rem !important;}
+  #publications .complete-pub-list .pub-chip{font-size:.49rem !important;line-height:1.25 !important;letter-spacing:.06em !important;}
+  #publications .complete-pub-list .pub-arrow{font-size:.85rem !important;}
+
+  #publications .complete-pub-list:not(.mobile-expanded) .pub-item:nth-child(n+6){
+    display:none !important;
+  }
+  #publications .pub-mobile-toggle{
+    display:flex;
+    width:calc(100% - 28px);
+    margin:14px auto 6px;
+    min-height:44px;
+    align-items:center;
+    justify-content:center;
+    border:1px solid #d6dee7;
+    border-radius:999px;
+    background:#fff;
+    color:#132840;
+    font:inherit;
+    font-size:.72rem;
+    font-weight:800;
+    cursor:pointer;
+  }
+  #publications .pub-mobile-toggle::after{
+    content:"＋";
+    margin-left:8px;
+    color:#e83f62;
+    font-size:1rem;
+  }
+  #publications .pub-mobile-toggle[aria-expanded="true"]::after{content:"−";}
+  #publications .pub-all-links{padding:13px 14px !important;gap:8px !important;}
+  #publications .pub-all-links span{font-size:.6rem !important;}
+  #publications .pub-all-links a{font-size:.65rem !important;}
+
+  /* Reduce vertical dead space between major mobile sections. */
+  .publication-section + .news-section{margin-top:0 !important;}
+  .news-section{padding-top:58px !important;}
+}
