@@ -2,30 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mochio0416.github.io/</loc>
-    <lastmod>2026-08-19</lastmod>
-  </url>
-  <url>
-    <loc>https://mochio0416.github.io/research/high-yield.html</loc>
-    <lastmod>2026-08-19</lastmod>
-  </url>
-  <url>
-    <loc>https://mochio0416.github.io/research/controlled-environment.html</loc>
-    <lastmod>2026-08-19</lastmod>
-  </url>
-  <url>
-    <loc>https://mochio0416.github.io/research/postharvest.html</loc>
-    <lastmod>2026-08-19</lastmod>
-  </url>
-  <url>
-    <loc>https://mochio0416.github.io/research/sensing.html</loc>
-    <lastmod>2026-08-19</lastmod>
   </url>
   <url>
     <loc>https://mochio0416.github.io/projects/biomarker.html</loc>
-    <lastmod>2026-08-19</lastmod>
   </url>
   <url>
     <loc>https://mochio0416.github.io/projects/precision.html</loc>
-    <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mochio0416.github.io/research/controlled-environment.html</loc>
+  </url>
+  <url>
+    <loc>https://mochio0416.github.io/research/high-yield.html</loc>
+  </url>
+  <url>
+    <loc>https://mochio0416.github.io/research/postharvest.html</loc>
+  </url>
+  <url>
+    <loc>https://mochio0416.github.io/research/sensing.html</loc>
   </url>
 </urlset>
