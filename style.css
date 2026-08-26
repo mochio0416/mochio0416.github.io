@@ -5274,3 +5274,114 @@ body[data-page="controlled-environment"] .detail-theme-hero h1{
     text-overflow:ellipsis !important;
   }
 }
+
+/* =========================================================
+   v10.73 — mobile research detail alignment fix
+   Research themes 01–04: natural title wrapping + one-column
+   Core Question. Applies equally to Japanese and English.
+   ========================================================= */
+@media (max-width:760px){
+  /* Research-theme hero titles: remove desktop-authored line breaks.
+     Let the phone viewport decide the wrapping in both JP and EN. */
+  .detail-theme-hero .detail-hero-copy{
+    min-width:0 !important;
+    width:100% !important;
+    max-width:100% !important;
+  }
+  .detail-theme-hero h1{
+    width:100% !important;
+    max-width:100% !important;
+    margin:14px 0 22px !important;
+    font-size:clamp(2.05rem,9.1vw,2.45rem) !important;
+    line-height:1.12 !important;
+    letter-spacing:-.045em !important;
+    white-space:normal !important;
+    overflow-wrap:normal !important;
+    word-break:normal !important;
+    text-wrap:pretty !important;
+  }
+  .detail-theme-hero h1 br{
+    display:none !important;
+  }
+  .detail-theme-hero h1 .detail-title-line,
+  .detail-theme-hero h1 .keep-line{
+    display:inline !important;
+    white-space:normal !important;
+  }
+  html[lang="ja"] .detail-theme-hero h1{
+    word-break:normal !important;
+    line-break:strict !important;
+  }
+  html[lang="en"] .detail-theme-hero h1{
+    font-size:clamp(2rem,8.7vw,2.35rem) !important;
+    overflow-wrap:normal !important;
+    word-break:keep-all !important;
+  }
+
+  /* Kicker should never create horizontal overflow. */
+  .detail-theme-hero .detail-kicker{
+    max-width:100% !important;
+    font-size:.67rem !important;
+    line-height:1.45 !important;
+    letter-spacing:.13em !important;
+    overflow-wrap:anywhere !important;
+  }
+
+  /* Core Question: force a single vertical reading order on phones. */
+  .detail-thesis{
+    padding:46px 0 50px !important;
+    overflow:hidden !important;
+  }
+  .detail-thesis .container,
+  .detail-thesis-grid{
+    width:calc(100% - 28px) !important;
+    max-width:none !important;
+    min-width:0 !important;
+  }
+  .detail-thesis-grid{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) !important;
+    gap:14px !important;
+    align-items:start !important;
+  }
+  .detail-thesis .detail-eyebrow{
+    grid-column:1 !important;
+    margin:0 !important;
+    font-size:.68rem !important;
+    line-height:1.4 !important;
+  }
+  .detail-thesis h2{
+    grid-column:1 !important;
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    margin:0 !important;
+    font-size:clamp(1.75rem,7.8vw,2.12rem) !important;
+    line-height:1.32 !important;
+    letter-spacing:-.04em !important;
+    white-space:normal !important;
+    overflow-wrap:normal !important;
+    word-break:normal !important;
+    text-wrap:pretty !important;
+  }
+  .detail-thesis h2 br{
+    display:none !important;
+  }
+  html[lang="en"] .detail-thesis h2{
+    font-size:clamp(1.65rem,7.1vw,1.98rem) !important;
+    word-break:normal !important;
+    overflow-wrap:normal !important;
+  }
+
+  /* Keep the following cards fully inside the viewport. */
+  .detail-body .container,
+  .detail-three,
+  .detail-three article{
+    min-width:0 !important;
+    max-width:100% !important;
+  }
+  .detail-three article{
+    width:100% !important;
+    box-sizing:border-box !important;
+  }
+}
