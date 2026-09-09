@@ -5385,3 +5385,89 @@ body[data-page="controlled-environment"] .detail-theme-hero h1{
     box-sizing:border-box !important;
   }
 }
+
+
+/* =========================================================
+   v10.74 — visible Japanese researcher name for name-search SEO
+   Keep the existing visual identity; add a compact Japanese-name line
+   under the English name in the fixed header on desktop and mobile.
+   ========================================================= */
+.brand-copy{
+  display:grid;
+  align-items:center;
+  line-height:1.05;
+  min-width:0;
+}
+.brand-name-ja{
+  display:block;
+  margin-top:4px;
+  color:#ff8fa4;
+  font-size:.58rem;
+  font-weight:750;
+  letter-spacing:.08em;
+  white-space:nowrap;
+}
+.site-header.scrolled .brand-name-ja{color:var(--red);}
+@media (max-width:760px){
+  .brand-copy{line-height:1.02;}
+  .brand-name-ja{font-size:.54rem;margin-top:3px;letter-spacing:.07em;}
+}
+@media (max-width:420px){
+  .brand-name-ja{font-size:.51rem;}
+}
+
+
+/* =========================================================
+   v10.76 — refined bilingual researcher brand + Frontiers text update
+   Keep the researcher name as one clean line in every header:
+   Yuya Mochizuki / 望月 佑哉
+   ========================================================= */
+.brand-copy{
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:baseline !important;
+  gap:.42rem !important;
+  min-width:0;
+  line-height:1 !important;
+  white-space:nowrap;
+}
+.brand-text{
+  display:inline-block !important;
+  margin:0 !important;
+  font-size:.91rem !important;
+  font-weight:700 !important;
+  letter-spacing:-.01em !important;
+  white-space:nowrap !important;
+}
+.brand-divider{
+  display:inline-block;
+  color:rgba(255,255,255,.42);
+  font-size:.72rem;
+  font-weight:500;
+  transform:translateY(-.02em);
+}
+.brand-name-ja{
+  display:inline-block !important;
+  margin:0 !important;
+  color:#ff8fa4;
+  font-size:.75rem !important;
+  font-weight:700 !important;
+  letter-spacing:.045em !important;
+  white-space:nowrap !important;
+}
+.site-header.scrolled .brand-divider{color:rgba(19,37,58,.34);}
+.site-header.scrolled .brand-name-ja{color:var(--red);}
+@media (max-width:760px){
+  .brand{gap:9px !important;min-width:0;}
+  .brand-copy{gap:.32rem !important;}
+  .brand-text{font-size:.76rem !important;}
+  .brand-divider{font-size:.62rem;}
+  .brand-name-ja{font-size:.64rem !important;letter-spacing:.025em !important;}
+}
+@media (max-width:380px){
+  .brand-copy{gap:.25rem !important;}
+  .brand-text{font-size:.71rem !important;}
+  .brand-name-ja{font-size:.59rem !important;}
+}
+
+/* v10.77 — deployment refresh. Forces corrected bilingual brand and Frontiers Japanese title to load. */
