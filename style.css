@@ -5471,3 +5471,20 @@ body[data-page="controlled-environment"] .detail-theme-hero h1{
 }
 
 /* v10.77 — deployment refresh. Forces corrected bilingual brand and Frontiers Japanese title to load. */
+
+
+/* =========================================================
+   v10.78 — mobile publication filter fix
+   Later mobile card rules force display:grid !important; this
+   rule must come last so filtered records are actually hidden.
+   ========================================================= */
+@media (max-width:760px){
+  #publications .complete-pub-list .pub-item.is-filtered-out{
+    display:none !important;
+  }
+  #publications .pub-filter.active{
+    background:var(--ink) !important;
+    border-color:var(--ink) !important;
+    color:#fff !important;
+  }
+}

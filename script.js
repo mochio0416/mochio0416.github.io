@@ -121,3 +121,20 @@ pubFilters.forEach((button) => {
 window.addEventListener('resize', () => {
   if (window.innerWidth > 760) setMobilePublicationExpanded(false);
 });
+
+
+// v10.78: keep mobile publication category filtering and the compact list toggle consistent.
+// Category views always show the complete filtered subset; the 5-item collapse is used only for “All”.
+pubFilters.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (window.innerWidth > 760 || !pubMobileToggle) return;
+    const isAll = (button.dataset.filter || 'all') === 'all';
+    if (isAll) {
+      setMobilePublicationExpanded(false);
+      pubMobileToggle.style.display = '';
+    } else {
+      setMobilePublicationExpanded(true);
+      pubMobileToggle.style.display = 'none';
+    }
+  });
+});
