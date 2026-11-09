@@ -1,3 +1,10 @@
+// v10.82: prevent duplicated header name when HTML fragments from different versions coexist.
+document.querySelectorAll('.brand-copy').forEach((brand) => {
+  brand.querySelectorAll('.brand-name-ja').forEach((name, index) => {
+    if (index > 0) name.remove();
+  });
+});
+
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('.nav');
 const header = document.querySelector('.site-header');
@@ -38,6 +45,7 @@ langButton?.addEventListener('click', () => {
   language = language === 'ja' ? 'en' : 'ja';
   localStorage.setItem('siteLanguage', language);
   applyLanguage();
+  renderPublicationToggle();
 });
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -56,24 +64,63 @@ if (prefersReducedMotion) {
 }
 
 
-// v5 publication theme filters
-const pubFilters = document.querySelectorAll('.pub-filter');
-const pubItems = document.querySelectorAll('.pub-list-v5 .pub-item');
-pubFilters.forEach((button) => {
-  button.addEventListener('click', () => {
-    const filter = button.dataset.filter || 'all';
-    pubFilters.forEach((b) => {
-      const active = b === button;
-      b.classList.toggle('active', active);
-      b.setAttribute('aria-pressed', String(active));
-    });
-    pubItems.forEach((item) => {
-      const show = filter === 'all' || item.dataset.theme === filter;
-      item.classList.toggle('is-filtered-out', !show);
-    });
+// Publication categories: one source of truth for active category and visibility.
+const pubFilters = Array.from(document.querySelectorAll('.pub-filter'));
+const pubItems = Array.from(document.querySelectorAll('.pub-list-v5 .pub-item'));
+const pubMobileToggle = document.querySelector('.pub-mobile-toggle');
+const completePubList = document.querySelector('.complete-pub-list');
+const publicationMobileQuery = window.matchMedia('(max-width: 760px)');
+let activePublicationFilter = 'all';
+
+function renderPublicationToggle() {
+  if (!pubMobileToggle || !completePubList) return;
+  const isMobile = publicationMobileQuery.matches;
+  const isCategory = activePublicationFilter !== 'all';
+  const expanded = completePubList.classList.contains('mobile-expanded');
+  pubMobileToggle.style.display = isMobile && isCategory ? 'none' : '';
+  pubMobileToggle.setAttribute('aria-expanded', String(expanded));
+  const isJa = document.documentElement.lang !== 'en';
+  pubMobileToggle.textContent = expanded
+    ? (isJa ? '業績リストを閉じる' : 'Collapse publication list')
+    : (isJa ? '全18件の業績を見る' : 'Show all 18 publications');
+}
+
+function selectPublicationCategory(category) {
+  activePublicationFilter = category;
+  pubFilters.forEach((button) => {
+    const active = button.dataset.filter === category;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
   });
+  pubItems.forEach((item) => {
+    const visible = category === 'all' || item.dataset.theme === category;
+    item.classList.toggle('is-filtered-out', !visible);
+    item.setAttribute('aria-hidden', String(!visible));
+  });
+  if (completePubList) {
+    completePubList.classList.toggle('mobile-expanded', publicationMobileQuery.matches && category !== 'all');
+  }
+  renderPublicationToggle();
+}
+
+pubFilters.forEach((button) => {
+  button.addEventListener('click', () => selectPublicationCategory(button.dataset.filter || 'all'));
 });
 
+pubMobileToggle?.addEventListener('click', () => {
+  if (!publicationMobileQuery.matches || activePublicationFilter !== 'all' || !completePubList) return;
+  completePubList.classList.toggle('mobile-expanded');
+  renderPublicationToggle();
+});
+
+// A category chosen on desktop remains fully visible if the viewport becomes narrow.
+publicationMobileQuery.addEventListener('change', () => {
+  if (completePubList) {
+    completePubList.classList.toggle('mobile-expanded', publicationMobileQuery.matches && activePublicationFilter !== 'all');
+  }
+  renderPublicationToggle();
+});
+selectPublicationCategory('all');
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
@@ -96,45 +143,3 @@ document.addEventListener('click', (event) => {
 });
 
 
-// v10.66: compact full publication record on mobile.
-const pubMobileToggle = document.querySelector('.pub-mobile-toggle');
-const completePubList = document.querySelector('.complete-pub-list');
-function setMobilePublicationExpanded(expanded) {
-  if (!pubMobileToggle || !completePubList) return;
-  completePubList.classList.toggle('mobile-expanded', expanded);
-  pubMobileToggle.setAttribute('aria-expanded', String(expanded));
-  const isJa = document.documentElement.lang !== 'en';
-  pubMobileToggle.textContent = expanded
-    ? (isJa ? '業績リストを閉じる' : 'Collapse publication list')
-    : (isJa ? '全18件の業績を見る' : 'Show all 18 publications');
-}
-pubMobileToggle?.addEventListener('click', () => {
-  setMobilePublicationExpanded(!completePubList?.classList.contains('mobile-expanded'));
-});
-pubFilters.forEach((button) => {
-  button.addEventListener('click', () => {
-    if (window.innerWidth <= 760 && button.dataset.filter !== 'all') {
-      setMobilePublicationExpanded(true);
-    }
-  });
-});
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 760) setMobilePublicationExpanded(false);
-});
-
-
-// v10.78: keep mobile publication category filtering and the compact list toggle consistent.
-// Category views always show the complete filtered subset; the 5-item collapse is used only for “All”.
-pubFilters.forEach((button) => {
-  button.addEventListener('click', () => {
-    if (window.innerWidth > 760 || !pubMobileToggle) return;
-    const isAll = (button.dataset.filter || 'all') === 'all';
-    if (isAll) {
-      setMobilePublicationExpanded(false);
-      pubMobileToggle.style.display = '';
-    } else {
-      setMobilePublicationExpanded(true);
-      pubMobileToggle.style.display = 'none';
-    }
-  });
-});
